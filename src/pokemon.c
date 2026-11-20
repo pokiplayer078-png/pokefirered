@@ -5243,6 +5243,10 @@ u16 SpeciesToCryId(u16 species)
     if (species <= SPECIES_OLD_UNOWN_Z - 1)
         return SPECIES_UNOWN - 1;
 
+    // New Serra and Calor species reuse a valid placeholder cry until custom cries are added.
+    if (species >= SPECIES_SNOLET - 1 && species <= SPECIES_PERMOSS_C - 1)
+        return SPECIES_SWINUB - 1;
+
     return sHoennSpeciesIdToCryId[species - ((SPECIES_OLD_UNOWN_Z + 1) - 1)];
 }
 
