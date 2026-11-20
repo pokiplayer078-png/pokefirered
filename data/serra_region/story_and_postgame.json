@@ -244,5 +244,18 @@
       "rematches contra líderes de Serra e Liga",
       "Torneio das Duas Estações"
     ]
+  },
+  "saveData": {
+    "storyStepVariable": "VAR_SERRA_STORY_STEP",
+    "worldStateVariable": "VAR_SERRA_CALOR_STATE",
+    "permanentFlags": {
+      "articuno": "FLAG_SERRA_ARTICUNO_CAUGHT",
+      "zapdos": "FLAG_SERRA_ZAPDOS_CAUGHT",
+      "moltres": "FLAG_SERRA_MOLTRES_CAUGHT",
+      "lugiaCalled": "FLAG_SERRA_LUGIA_CALLED",
+      "galarBirdsDefeated": "FLAG_SERRA_GALAR_BIRDS_DEFEATED",
+      "calorBloomed": "FLAG_SERRA_CALOR_BLOOMED"
+    },
+    "rule": "A flag de Calor florido é permanente; ao carregar o save, mapas de Serra usam a variante pós-jogo e os acessos à Região de Calor permanecem abertos."
   }
 }
