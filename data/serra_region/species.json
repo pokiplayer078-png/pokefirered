@@ -2137,7 +2137,11 @@
         "total": 299
       },
       "ability": "Flash Fire",
-      "evolution": null,
+      "evolution": {
+        "method": "level",
+        "level": 35,
+        "to": "NINETAL_S"
+      },
       "habitat": "Rotas, geleiras e santuários de Serra",
       "design": "Forma regional de Vulpix adaptada à ecologia local",
       "dexEntry": "Sua pelagem conserva o frio das montanhas mesmo nas noites sem neve."
@@ -2181,7 +2185,11 @@
         "total": 300
       },
       "ability": "Sand Veil",
-      "evolution": null,
+      "evolution": {
+        "method": "level",
+        "level": 22,
+        "to": "SANDSL_S"
+      },
       "habitat": "Rotas, geleiras e santuários de Serra",
       "design": "Forma regional de Sandshrew adaptada à ecologia local",
       "dexEntry": "Escava túneis sob o gelo usando pequenas placas metálicas nas patas."
@@ -2225,7 +2233,11 @@
         "total": 300
       },
       "ability": "Sturdy",
-      "evolution": null,
+      "evolution": {
+        "method": "level",
+        "level": 25,
+        "to": "GRAVELER_S"
+      },
       "habitat": "Rotas, geleiras e santuários de Serra",
       "design": "Forma regional de Geodude adaptada à ecologia local",
       "dexEntry": "Pedras magnéticas atraem fragmentos metálicos das geleiras."
@@ -2247,7 +2259,11 @@
         "total": 390
       },
       "ability": "Rock Head",
-      "evolution": null,
+      "evolution": {
+        "method": "level",
+        "level": 42,
+        "to": "GOLEM_S"
+      },
       "habitat": "Rotas, geleiras e santuários de Serra",
       "design": "Forma regional de Graveler adaptada à ecologia local",
       "dexEntry": "Rola por encostas carregando energia nas placas minerais."
@@ -2291,7 +2307,11 @@
         "total": 327
       },
       "ability": "Flash Fire",
-      "evolution": null,
+      "evolution": {
+        "method": "level",
+        "level": 32,
+        "to": "FROSTASH_C"
+      },
       "habitat": "Região de Calor",
       "design": "Forma regional de Cindrift adaptada à ecologia local",
       "dexEntry": "Flores de brasa crescem entre seus pelos quando a Região de Calor floresce."
@@ -2313,7 +2333,11 @@
         "total": 413
       },
       "ability": "Flame Body",
-      "evolution": null,
+      "evolution": {
+        "method": "level",
+        "level": 44,
+        "to": "PYRICE_C"
+      },
       "habitat": "Região de Calor",
       "design": "Forma regional de Frostash adaptada à ecologia local",
       "dexEntry": "Sua juba libera pólen quente que alimenta os jardins de Calor."
@@ -2357,7 +2381,11 @@
         "total": 290
       },
       "ability": "Natural Cure",
-      "evolution": null,
+      "evolution": {
+        "method": "level",
+        "level": 16,
+        "to": "FERNICE_C"
+      },
       "habitat": "Região de Calor",
       "design": "Forma regional de Mossnow adaptada à ecologia local",
       "dexEntry": "Brota em solo recém-descongelado e absorve água mineral."
@@ -2379,7 +2407,11 @@
         "total": 385
       },
       "ability": "Chlorophyll",
-      "evolution": null,
+      "evolution": {
+        "method": "level",
+        "level": 32,
+        "to": "PERMOSS_C"
+      },
       "habitat": "Região de Calor",
       "design": "Forma regional de Fernice adaptada à ecologia local",
       "dexEntry": "Suas folhas largas protegem pequenos brotos do sol forte."
