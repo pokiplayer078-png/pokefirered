@@ -1,18 +1,52 @@
-# Serra Region — plano de expansão
+# Pokémon FireRed — Serra Region
 
-## Estado desta entrega
+## Estado atual da implementação
 
-Esta branch adiciona o **pacote de criação da região**: catálogo de 80 espécies, estrutura da Liga, direção de arte e um validador dos dados. Os arquivos estão em formato de autoria e ainda **não estão ligados às tabelas C nem aos recursos gráficos do jogo**. Não há ROM compilada nesta etapa.
+A branch `serra-region-foundation` já contém integração inicial no código do FireRed:
 
-## Conceito
+- **101 espécies internas**: as 80 espécies originais de Serra mais 21 aves lendárias, formas de Galar e formas regionais de Serra/Calor.
+- Constantes de espécies, atributos, nomes, evoluções e learnsets.
+- Entradas nas tabelas de sprites front/back, coordenadas, paletas normal/shiny, ícones e pegadas.
+- Tipo **Fada** registrado e uma camada inicial de efetividade de golpes.
+- Habilidade **Glaciate**: para Lugia de Serra, golpes do tipo Normal são tratados como Gelo no cálculo de dano e tipo em batalha.
+- IDs de flags e variáveis para registrar a captura das aves, o chamado de Lugia, a derrota das aves de Galar e o florescimento permanente de Calor.
+- Primeiro mapa `VilaFlocos`, NPC pesquisador e entrega de **Snolet Lv. 5**; novos jogos começam nesse mapa.
 
-A Serra Region é uma região montanhosa de clima frio, com florestas de pinheiros, cidades costeiras congeladas, minas de prata, fontes termais, ruínas soterradas e uma cadeia de montanhas que termina no Cume Dracônico. A campanha investiga o desaparecimento gradual das auroras: uma organização de exploradores, a **Ordem do Degelo**, está perfurando geleiras para extrair energia térmica antiga e ameaça desequilibrar o clima.
+Esta ainda é uma **integração de fundação**, não uma ROM final. Há assets e partes de campanha que ainda precisam ser criados e conectados. Consulte [INTEGRATION_STATUS.md](INTEGRATION_STATUS.md).
 
-O jogador começa em **Vila Flocos**, recebe seu primeiro parceiro e segue por rotas que alternam áreas abertas, florestas, cavernas e passagens de montanha. A região tem oito ginásios, uma Elite Four e o Campeão Rowan.
+## História principal
 
-## Estrutura da campanha
+O aquecimento anormal está descongelando a ilha de Serra. As três aves lendárias de Galar — Articuno, Zapdos e Moltres — estão alterando as correntes de ar e espalhando calor extremo pela região.
 
-| Ordem | Local | Líder | Especialidade | Insígnia |
+O jogador precisa localizar as três aves lendárias de Serra:
+
+- **Articuno de Serra** — Santuário do Vento Branco.
+- **Zapdos de Serra** — Pico do Trovão Azul.
+- **Moltres de Serra** — Fornalha Azul.
+
+Após reunir as três plumas, o jogador chama **Lugia de Serra**, do tipo **Gelo/Fada**. Sua habilidade exclusiva, **Glaciate**, converte golpes Normais de Lugia em golpes de Gelo.
+
+Lugia ajuda o jogador a enfrentar as três aves de Galar. Quando elas são derrotadas, o aquecimento acelerado é interrompido, mas a história ainda não terminou: **Ho-Oh da Região de Calor** aparece. Esse Ho-Oh é do tipo **Fada/Fogo** e é extremamente poderoso.
+
+Ao ser derrotado, Ho-Oh cai. O gelo não volta a cobrir a ilha. O clima estabiliza, as terras que já haviam descongelado florescem e revelam a beleza da **Região de Calor**. O pós-jogo permite explorar essa nova região.
+
+A campanha e os eventos estão descritos em [story_and_postgame.json](../../data/serra_region/story_and_postgame.json).
+
+## Pokédex de Serra e formas regionais
+
+O arquivo [species.json](../../data/serra_region/species.json) mantém o catálogo de 101 entradas. A proposta evita transformar todos os Pokémon em tipos Gelo:
+
+- Serra inclui Pokémon de Gelo, Água, Rocha, Elétrico, Fantasma, Dragão, Fogo, Planta, Lutador, Voador, Psíquico e outros tipos.
+- As aves de Serra e as aves de Galar são entradas separadas para permitir encontros e batalhas distintas.
+- As formas de Calor são adequadas a vales floridos e áreas quentes: incluem combinações Fogo/Planta, Planta/Terra e Planta/Fada.
+
+As formas regionais são espécies internas próprias na implementação atual. Isso torna o registro e os atributos jogáveis no motor mais simples, mas não significa que a interface de Pokédex já apresente uma tela de formas regionais dedicada.
+
+## Progressão de ginásios
+
+### Serra — campanha principal
+
+| Ordem | Cidade | Líder | Especialidade | Insígnia |
 |---:|---|---|---|---|
 | 1 | Vila Flocos | Runa | Gelo | Floco |
 | 2 | Pedrafria | Dario | Rocha | Granito |
@@ -23,59 +57,39 @@ O jogador começa em **Vila Flocos**, recebe seu primeiro parceiro e segue por r
 | 7 | Caldeira Invernal | Pyra | Fogo | Brasa |
 | 8 | Cume Dracônico | Draven | Dragão | Aurora |
 
-### Elite Four
+Elite Four: **Eira**, **Magnus**, **Nox** e **Aster**. Campeão: **Rowan**.
 
-1. **Eira — Guardiã da Geada:** equipes de gelo e controle de velocidade.
-2. **Magnus — Mestre da Forja:** aço e rocha, defesa alta e ataques de contato.
-3. **Nox — Vigia do Crepúsculo:** fantasma e psíquico, estados e alterações de ritmo.
-4. **Aster — Domador do Céu:** dragão e voador, cobertura e pressão ofensiva.
+### Calor — pós-jogo planejado
 
-**Campeão Rowan:** equipe equilibrada de seis integrantes, com Boreas como destaque. A Liga deve exigir cobertura de tipos, não apenas vantagem de gelo.
+| Ordem | Cidade | Líder | Especialidade | Insígnia |
+|---:|---|---|---|---|
+| 1 | Vila Pomar | Liora | Planta | Pétala |
+| 2 | Forno Solar | Caio | Fogo | Brasa Solar |
+| 3 | Baía das Flores | Marina | Água | Maré Clara |
+| 4 | Mirante do Sol | Ícaro | Fada | Alvorada |
 
-## Locais principais
+Campeã de Calor: **Solene**.
 
-- **Vila Flocos:** cidade inicial, laboratório regional e trilha de treinamento.
-- **Pedrafria:** povoado de pedreiras, túneis e primeiro grande desafio de navegação.
-- **Pinhal Alto:** cidade construída entre pinheiros e passarelas elevadas.
-- **Porto Boreal:** porto pesqueiro parcialmente congelado e acesso ao Mar de Serra.
-- **Minas de Prata:** complexo industrial antigo, trilhos e forja.
-- **Vila Sombria:** vila isolada perto de ruínas e de um antigo observatório.
-- **Caldeira Invernal:** fontes termais, vapor e atividade vulcânica sob o gelo.
-- **Cume Dracônico:** último povoado antes da Liga, com trilha de altitude.
-- **Observatório da Aurora:** local de pesquisa e ponto central da história.
-- **Santuário da Aurora:** área lendária acessível após a campanha principal.
+As equipes e níveis estão em [gyms_and_league.json](../../data/serra_region/gyms_and_league.json) e [story_and_postgame.json](../../data/serra_region/story_and_postgame.json).
 
-## Desafios e mecânicas
+## Vila Flocos — primeiro mapa integrado
 
-- **Nevasca:** visibilidade limitada em rotas específicas; marcos e placas ajudam a orientar o jogador.
-- **Gelo deslizante:** puzzles com direção de movimento, evitando becos sem saída e preservando caminhos de retorno.
-- **Avalanches:** eventos de cenário avisados por sinais visuais e sonoros, com rotas alternativas.
-- **Correntes marítimas:** canais e comportas no Porto Boreal e no Mar de Serra.
-- **Vagonetes:** desvios de trilhos nas Minas de Prata.
-- **Vapor e fontes termais:** válvulas abrem caminhos; fontes termais funcionam como pontos de recuperação.
-- **Expedição Branca:** desafio opcional pós-Liga com acampamentos limitados.
-- **Torneio das Estações:** torneio pós-jogo com regras temáticas rotativas.
+O mapa `MAP_VILA_FLOCOS` está cadastrado em `data/maps/map_groups.json`, usa a seção `MAPSEC_SERRA_REGION` e é o ponto inicial de novos jogos. Um pesquisador entrega Snolet Lv. 5 uma única vez; a flag de entrega é persistida no save.
 
-Os obstáculos devem ser anunciados antes de exigir uma ação irreversível. Mapas de gelo e avalanche precisam sempre permitir um caminho de recuperação, evitando softlocks.
-
-## Pokédex de Serra
-
-O arquivo [`data/serra_region/species.json`](../../data/serra_region/species.json) contém **80 espécies originais**, em 26 famílias evolutivas e dois lendários. Cada entrada possui tipos compatíveis com a base Gen III, atributos-base, habilidade existente como referência de design, evolução, habitat, descrição e conceito visual.
-
-Os nomes foram mantidos com até 10 caracteres para respeitar o limite tradicional dos nomes de Pokémon nesta base.
+**Limitação visual atual:** Vila Flocos reutiliza o layout de One Island e suas tilesets existentes. O mapa ainda não possui casas, rotas conectadas, centro Pokémon, laboratório ou tilesets próprios de neve. O clima `WEATHER_SNOW` está definido na base como não utilizado, por isso o efeito visual de neve ainda precisa ser implementado/testado.
 
 ## Direção de arte
 
-O arquivo [`data/serra_region/tileset_palette_plan.json`](../../data/serra_region/tileset_palette_plan.json) define paletas frias, tratamentos de tilesets e regras para sprites. O objetivo é neve estilizada GBA, sem transformar tudo em azul: regiões vulcânicas, fogo e espécies de outros tipos preservam suas cores de identidade.
+[tileset_palette_plan.json](../../data/serra_region/tileset_palette_plan.json) descreve as paletas e o estilo dos sprites. As tabelas gráficas atuais apontam para sprites existentes como placeholders válidos; os desenhos exclusivos das 101 espécies ainda precisam ser produzidos.
 
-## Próximas etapas de integração ao motor
+## Próximas etapas obrigatórias
 
-1. Expandir `include/constants/species.h` e ajustar contadores e limites de espécies com cuidado.
-2. Integrar nomes, dados-base, evoluções, learnsets, TM/HM, egg moves, Pokédex, cries e tabelas de gráficos.
-3. Criar os 80 conjuntos de sprites front/back, ícones, paletas e footprints.
-4. Registrar mapas, layouts, scripts, textos e conexões em `data/maps/`, `data/layouts/` e `data/maps.s`.
-5. Criar encontros selvagens e distribuição progressiva das novas espécies.
-6. Adaptar equipes de treinadores, oito ginásios, Elite Four, Campeão e eventos da Ordem do Degelo.
-7. Testar compilação, colisões, transições, salvamento, evolução, Pokédex e batalhas em emulador.
+1. Criar tilesets e paletas reais de Serra e Calor, e testar colisões.
+2. Desenhar e importar sprites front/back, ícones, paletas normal/shiny, footprints e cries.
+3. Completar a interface e a Pokédex para os novos IDs, inclusive apresentação do tipo Fada e das formas regionais.
+4. Criar mapas conectados de Serra, os oito ginásios, Liga, santuários das três aves e mapas da Região de Calor.
+5. Conectar a história a scripts de eventos: capturas, altar de Lugia, três batalhas contra as aves de Galar, batalha de Ho-Oh e transição permanente para o cenário florido.
+6. Implementar encontros selvagens, treinadores, equipes e recompensas de campanha/pós-jogo.
+7. Compilar a ROM, corrigir erros de build e testar uma campanha completa no mGBA.
 
-A integração deve acontecer em commits pequenos e compiláveis. Não se deve aumentar `NUM_SPECIES` antes de preparar as tabelas dependentes, pois sprites, learnsets e dados de batalha indexam o mesmo conjunto de espécies.
+Não declarar a ROM jogável até a compilação e os testes de transição, batalhas, save, Pokédex e progressão terem sido concluídos.
