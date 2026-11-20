@@ -1,7 +1,7 @@
 {
   "region": "Serra Region",
-  "regionalDexCount": 80,
-  "note": "Catálogo de criação. Ainda não integrado às tabelas C, aos sprites, às paletas ou ao sistema de Pokédex do motor FireRed.",
+  "regionalDexCount": 101,
+  "note": "Catálogo interno expandido para a Serra Region. As formas regionais são registradas como espécies internas próprias no FireRed; os recursos gráficos definitivos serão adicionados em etapa separada.",
   "species": [
     {
       "regionalDex": 1,
@@ -1944,6 +1944,467 @@
       "habitat": "Coração da Caldeira Invernal",
       "design": "lince lendário com juba de neve e uma chama azul no peito",
       "dexEntry": "Mantém o equilíbrio térmico da região: sua presença impede que o gelo eterno consuma as fontes termais."
+    },
+    {
+      "regionalDex": 81,
+      "name": "ARTICUNO_S",
+      "types": [
+        "ICE",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "speed": 85,
+        "spAttack": 105,
+        "spDefense": 125,
+        "total": 590
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Articuno adaptada à ecologia local",
+      "dexEntry": "Forma de Serra que conduz correntes polares e acalma nevascas."
+    },
+    {
+      "regionalDex": 82,
+      "name": "ZAPDOS_S",
+      "types": [
+        "ICE",
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 95,
+        "defense": 85,
+        "speed": 110,
+        "spAttack": 120,
+        "spDefense": 90,
+        "total": 590
+      },
+      "ability": "Static",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Zapdos adaptada à ecologia local",
+      "dexEntry": "Armazena eletricidade estática em penas cobertas por cristais de gelo."
+    },
+    {
+      "regionalDex": 83,
+      "name": "MOLTRES_S",
+      "types": [
+        "FIRE",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "speed": 90,
+        "spAttack": 115,
+        "spDefense": 100,
+        "total": 585
+      },
+      "ability": "Flame Body",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Moltres adaptada à ecologia local",
+      "dexEntry": "Sua chama azul aquece o ar sem derreter as geleiras ao redor."
+    },
+    {
+      "regionalDex": 84,
+      "name": "ARTICUNO_G",
+      "types": [
+        "PSYCHIC",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 85,
+        "speed": 95,
+        "spAttack": 125,
+        "spDefense": 100,
+        "total": 580
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Articuno adaptada à ecologia local",
+      "dexEntry": "A ave de Galar distorce o calor em miragens que enfraquecem a neve."
+    },
+    {
+      "regionalDex": 85,
+      "name": "ZAPDOS_G",
+      "types": [
+        "FIGHTING",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 125,
+        "defense": 90,
+        "speed": 100,
+        "spAttack": 85,
+        "spDefense": 90,
+        "total": 580
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Zapdos adaptada à ecologia local",
+      "dexEntry": "Suas passadas liberam ondas de calor que racham o gelo antigo."
+    },
+    {
+      "regionalDex": 86,
+      "name": "MOLTRES_G",
+      "types": [
+        "DARK",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 90,
+        "speed": 90,
+        "spAttack": 125,
+        "spDefense": 100,
+        "total": 580
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Moltres adaptada à ecologia local",
+      "dexEntry": "Suas chamas sombrias aquecem o solo e deixam a vegetação seca."
+    },
+    {
+      "regionalDex": 87,
+      "name": "LUGIA_S",
+      "types": [
+        "ICE",
+        "FAIRY"
+      ],
+      "stats": {
+        "hp": 106,
+        "attack": 90,
+        "defense": 130,
+        "speed": 110,
+        "spAttack": 110,
+        "spDefense": 154,
+        "total": 700
+      },
+      "ability": "Glaciate",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Lugia adaptada à ecologia local",
+      "dexEntry": "Guardião das correntes frias, desperta quando as três aves de Serra se reúnem."
+    },
+    {
+      "regionalDex": 88,
+      "name": "HO_OH_C",
+      "types": [
+        "FAIRY",
+        "FIRE"
+      ],
+      "stats": {
+        "hp": 106,
+        "attack": 130,
+        "defense": 90,
+        "speed": 110,
+        "spAttack": 154,
+        "spDefense": 100,
+        "total": 690
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Ho-Oh adaptada à ecologia local",
+      "dexEntry": "A ave da Região de Calor desperta flores e vida onde o gelo enfim repousa."
+    },
+    {
+      "regionalDex": 89,
+      "name": "VULPIX_S",
+      "types": [
+        "ICE"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "speed": 65,
+        "spAttack": 50,
+        "spDefense": 65,
+        "total": 299
+      },
+      "ability": "Flash Fire",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Vulpix adaptada à ecologia local",
+      "dexEntry": "Sua pelagem conserva o frio das montanhas mesmo nas noites sem neve."
+    },
+    {
+      "regionalDex": 90,
+      "name": "NINETAL_S",
+      "types": [
+        "ICE",
+        "FAIRY"
+      ],
+      "stats": {
+        "hp": 73,
+        "attack": 76,
+        "defense": 75,
+        "speed": 100,
+        "spAttack": 81,
+        "spDefense": 100,
+        "total": 505
+      },
+      "ability": "Flash Fire",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Ninetales adaptada à ecologia local",
+      "dexEntry": "As nove caudas formam véus de geada que brilham como estrelas."
+    },
+    {
+      "regionalDex": 91,
+      "name": "SANDSH_S",
+      "types": [
+        "ICE",
+        "STEEL"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 90,
+        "speed": 40,
+        "spAttack": 10,
+        "spDefense": 35,
+        "total": 300
+      },
+      "ability": "Sand Veil",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Sandshrew adaptada à ecologia local",
+      "dexEntry": "Escava túneis sob o gelo usando pequenas placas metálicas nas patas."
+    },
+    {
+      "regionalDex": 92,
+      "name": "SANDSL_S",
+      "types": [
+        "ICE",
+        "STEEL"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 120,
+        "speed": 65,
+        "spAttack": 25,
+        "spDefense": 65,
+        "total": 450
+      },
+      "ability": "Sturdy",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Sandslash adaptada à ecologia local",
+      "dexEntry": "Suas lâminas de gelo e aço cortam paredes congeladas."
+    },
+    {
+      "regionalDex": 93,
+      "name": "GEODUDE_S",
+      "types": [
+        "ROCK",
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "speed": 20,
+        "spAttack": 30,
+        "spDefense": 30,
+        "total": 300
+      },
+      "ability": "Sturdy",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Geodude adaptada à ecologia local",
+      "dexEntry": "Pedras magnéticas atraem fragmentos metálicos das geleiras."
+    },
+    {
+      "regionalDex": 94,
+      "name": "GRAVELER_S",
+      "types": [
+        "ROCK",
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "speed": 35,
+        "spAttack": 45,
+        "spDefense": 45,
+        "total": 390
+      },
+      "ability": "Rock Head",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Graveler adaptada à ecologia local",
+      "dexEntry": "Rola por encostas carregando energia nas placas minerais."
+    },
+    {
+      "regionalDex": 95,
+      "name": "GOLEM_S",
+      "types": [
+        "ROCK",
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 120,
+        "defense": 130,
+        "speed": 45,
+        "spAttack": 55,
+        "spDefense": 65,
+        "total": 495
+      },
+      "ability": "Sturdy",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Golem adaptada à ecologia local",
+      "dexEntry": "Sua carapaça armazena relâmpagos que iluminam cavernas profundas."
+    },
+    {
+      "regionalDex": 96,
+      "name": "CINDRIFT_C",
+      "types": [
+        "FIRE",
+        "GRASS"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 52,
+        "defense": 45,
+        "speed": 70,
+        "spAttack": 68,
+        "spDefense": 50,
+        "total": 327
+      },
+      "ability": "Flash Fire",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Cindrift adaptada à ecologia local",
+      "dexEntry": "Flores de brasa crescem entre seus pelos quando a Região de Calor floresce."
+    },
+    {
+      "regionalDex": 97,
+      "name": "FROSTASH_C",
+      "types": [
+        "FIRE",
+        "GRASS"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 65,
+        "defense": 55,
+        "speed": 85,
+        "spAttack": 88,
+        "spDefense": 62,
+        "total": 413
+      },
+      "ability": "Flame Body",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Frostash adaptada à ecologia local",
+      "dexEntry": "Sua juba libera pólen quente que alimenta os jardins de Calor."
+    },
+    {
+      "regionalDex": 98,
+      "name": "PYRICE_C",
+      "types": [
+        "FIRE",
+        "GRASS"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 92,
+        "defense": 75,
+        "speed": 105,
+        "spAttack": 115,
+        "spDefense": 88,
+        "total": 555
+      },
+      "ability": "Flame Body",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Pyrice adaptada à ecologia local",
+      "dexEntry": "Corre por campos floridos deixando sementes aquecidas em seu rastro."
+    },
+    {
+      "regionalDex": 99,
+      "name": "MOSSNOW_C",
+      "types": [
+        "GRASS",
+        "GROUND"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 45,
+        "defense": 50,
+        "speed": 35,
+        "spAttack": 60,
+        "spDefense": 55,
+        "total": 290
+      },
+      "ability": "Natural Cure",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Mossnow adaptada à ecologia local",
+      "dexEntry": "Brota em solo recém-descongelado e absorve água mineral."
+    },
+    {
+      "regionalDex": 100,
+      "name": "FERNICE_C",
+      "types": [
+        "GRASS",
+        "GROUND"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 60,
+        "defense": 65,
+        "speed": 50,
+        "spAttack": 80,
+        "spDefense": 70,
+        "total": 385
+      },
+      "ability": "Chlorophyll",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Fernice adaptada à ecologia local",
+      "dexEntry": "Suas folhas largas protegem pequenos brotos do sol forte."
+    },
+    {
+      "regionalDex": 101,
+      "name": "PERMOSS_C",
+      "types": [
+        "GRASS",
+        "FAIRY"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 80,
+        "defense": 90,
+        "speed": 60,
+        "spAttack": 110,
+        "spDefense": 105,
+        "total": 530
+      },
+      "ability": "Natural Cure",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Permoss adaptada à ecologia local",
+      "dexEntry": "Suas flores sustentam a vida que retorna aos vales de Calor."
     }
   ],
   "evolutionFamilies": [
