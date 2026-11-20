@@ -1,0 +1,397 @@
+{
+  "region": "Serra Region",
+  "gyms": [
+    {
+      "order": 1,
+      "city": "Vila Flocos",
+      "leader": "Runa",
+      "specialty": [
+        "ICE"
+      ],
+      "badge": "Floco",
+      "puzzle": "piso escorregadio em circuito curto; placas mostram a direção do vento",
+      "team": [
+        [
+          "SNOLET",
+          14
+        ],
+        [
+          "PENGLIT",
+          15
+        ],
+        [
+          "GLACUB",
+          17
+        ]
+      ],
+      "reward": {
+        "tm": "Icy Wind",
+        "badgeEffect": "obediência até o nível 20"
+      }
+    },
+    {
+      "order": 2,
+      "city": "Pedrafria",
+      "leader": "Dario",
+      "specialty": [
+        "ROCK"
+      ],
+      "badge": "Granito",
+      "puzzle": "empurrar blocos de gelo para revelar passagens sem bloquear o retorno",
+      "team": [
+        [
+          "BERGIT",
+          19
+        ],
+        [
+          "PEBBLIT",
+          20
+        ],
+        [
+          "GLACER",
+          22
+        ]
+      ],
+      "reward": {
+        "tm": "Rock Tomb",
+        "badgeEffect": "obediência até o nível 30"
+      }
+    },
+    {
+      "order": 3,
+      "city": "Pinhal Alto",
+      "leader": "Maia",
+      "specialty": [
+        "ICE",
+        "FLYING"
+      ],
+      "badge": "Rajada",
+      "puzzle": "correntes de vento mudam plataformas e exigem observar bandeiras",
+      "team": [
+        [
+          "OWLIT",
+          25
+        ],
+        [
+          "DRIFLET",
+          26
+        ],
+        [
+          "SNOWL",
+          28
+        ]
+      ],
+      "reward": {
+        "tm": "Aerial Ace",
+        "badgeEffect": "obediência até o nível 40"
+      }
+    },
+    {
+      "order": 4,
+      "city": "Porto Boreal",
+      "leader": "Nereu",
+      "specialty": [
+        "WATER"
+      ],
+      "badge": "Maré",
+      "puzzle": "canais com correntes; alternar comportas para alcançar as salas de batalha",
+      "team": [
+        [
+          "FINLET",
+          31
+        ],
+        [
+          "SEALLET",
+          32
+        ],
+        [
+          "GLACFIN",
+          34
+        ]
+      ],
+      "reward": {
+        "tm": "Water Pulse",
+        "badgeEffect": "obediência até o nível 50"
+      }
+    },
+    {
+      "order": 5,
+      "city": "Minas de Prata",
+      "leader": "Kora",
+      "specialty": [
+        "STEEL"
+      ],
+      "badge": "Prata",
+      "puzzle": "vagonetes sobre trilhos; interruptores reposicionam os desvios",
+      "team": [
+        [
+          "IRONIP",
+          38
+        ],
+        [
+          "ICECLAM",
+          39
+        ],
+        [
+          "FERRITK",
+          41
+        ]
+      ],
+      "reward": {
+        "tm": "Metal Claw",
+        "badgeEffect": "obediência até o nível 60"
+      }
+    },
+    {
+      "order": 6,
+      "city": "Vila Sombria",
+      "leader": "Vesper",
+      "specialty": [
+        "GHOST"
+      ],
+      "badge": "Eco",
+      "puzzle": "labirinto de ecos: seguir o som correto evita retornar ao início",
+      "team": [
+        [
+          "WRAITH",
+          43
+        ],
+        [
+          "HUSHOW",
+          44
+        ],
+        [
+          "CHILUME",
+          46
+        ]
+      ],
+      "reward": {
+        "tm": "Shadow Ball",
+        "badgeEffect": "obediência até o nível 70"
+      }
+    },
+    {
+      "order": 7,
+      "city": "Caldeira Invernal",
+      "leader": "Pyra",
+      "specialty": [
+        "FIRE"
+      ],
+      "badge": "Brasa",
+      "puzzle": "alternar válvulas de vapor para abrir pontes e resfriar pisos",
+      "team": [
+        [
+          "CINDRIFT",
+          49
+        ],
+        [
+          "ASHLET",
+          50
+        ],
+        [
+          "FROSTASH",
+          52
+        ]
+      ],
+      "reward": {
+        "tm": "Flamethrower",
+        "badgeEffect": "obediência até o nível 80"
+      }
+    },
+    {
+      "order": 8,
+      "city": "Cume Dracônico",
+      "leader": "Draven",
+      "specialty": [
+        "DRAGON"
+      ],
+      "badge": "Aurora",
+      "puzzle": "subida em três setores com vento lateral e treinadores de resistência",
+      "team": [
+        [
+          "DRACUB",
+          55
+        ],
+        [
+          "GLACISAU",
+          56
+        ],
+        [
+          "SKALICE",
+          58
+        ],
+        [
+          "NIVADRA",
+          60
+        ]
+      ],
+      "reward": {
+        "tm": "Dragon Claw",
+        "badgeEffect": "acesso à Liga Serra"
+      }
+    }
+  ],
+  "eliteFour": [
+    {
+      "order": 1,
+      "name": "Eira",
+      "title": "Guardião da Geada",
+      "specialty": [
+        "ICE"
+      ],
+      "team": [
+        [
+          "FROSTAG",
+          60
+        ],
+        [
+          "AURORSEAL",
+          61
+        ],
+        [
+          "BOREALIS",
+          62
+        ],
+        [
+          "BEARICE",
+          63
+        ]
+      ]
+    },
+    {
+      "order": 2,
+      "name": "Magnus",
+      "title": "Mestre da Forja",
+      "specialty": [
+        "STEEL",
+        "ROCK"
+      ],
+      "team": [
+        [
+          "CRYOTYR",
+          62
+        ],
+        [
+          "GLACIGOL",
+          63
+        ],
+        [
+          "RIMESHELL",
+          64
+        ],
+        [
+          "GLACIODON",
+          65
+        ]
+      ]
+    },
+    {
+      "order": 3,
+      "name": "Nox",
+      "title": "Vigia do Crepúsculo",
+      "specialty": [
+        "GHOST",
+        "PSYCHIC"
+      ],
+      "team": [
+        [
+          "GLOOMICE",
+          64
+        ],
+        [
+          "UMBRICE",
+          65
+        ],
+        [
+          "MIRRORYX",
+          66
+        ],
+        [
+          "BOREALITH",
+          67
+        ]
+      ]
+    },
+    {
+      "order": 4,
+      "name": "Aster",
+      "title": "Domador do Céu",
+      "specialty": [
+        "DRAGON",
+        "FLYING"
+      ],
+      "team": [
+        [
+          "NOCTURN",
+          66
+        ],
+        [
+          "TUNDRAGON",
+          67
+        ],
+        [
+          "AURORWING",
+          68
+        ],
+        [
+          "NIVADRA",
+          69
+        ]
+      ]
+    }
+  ],
+  "champion": {
+    "name": "Rowan",
+    "title": "Campeão da Serra",
+    "team": [
+      [
+        "THUNDRA",
+        69
+      ],
+      [
+        "PERMOSS",
+        69
+      ],
+      [
+        "LEVIACER",
+        70
+      ],
+      [
+        "FROSTKNIT",
+        70
+      ],
+      [
+        "VOLCARIME",
+        71
+      ],
+      [
+        "BOREAS",
+        73
+      ]
+    ],
+    "battleTheme": "mix equilibrado; cobertura contra gelo, aço, fogo e dragão"
+  },
+  "postLeagueChallenges": [
+    {
+      "name": "Trilha da Coroa",
+      "description": "sequência de 10 batalhas sem cura entre confrontos; premiação: item raro e registro no quadro dos campeões"
+    },
+    {
+      "name": "Expedição Branca",
+      "description": "travessia com visibilidade reduzida, acampamentos limitados e encontros de alto nível"
+    },
+    {
+      "name": "Cavernas de Cristal",
+      "description": "puzzles de espelhos e gelo fino; libera a busca por SOLSTICE"
+    },
+    {
+      "name": "Torneio das Estações",
+      "description": "torneio opcional com equipes temáticas e regras rotativas"
+    },
+    {
+      "name": "Desafio do Observatório",
+      "description": "batalhas duplas contra equipes que usam clima, velocidade e mudanças de campo"
+    }
+  ],
+  "progressionNotes": "Os níveis foram planejados para a campanha completa. Ajustar a curva de experiência e a disponibilidade dos itens de cura ao integrar ao jogo."
+}

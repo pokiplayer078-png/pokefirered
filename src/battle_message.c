@@ -1373,6 +1373,8 @@ static const u8 sText_Trainer1Fled[] = _("{PLAY_SE SE_FLEE}{B_TRAINER1_CLASS} {B
 static const u8 sText_PlayerLostAgainstTrainer1[] = _("Player lost against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!");
 static const u8 sText_PlayerBattledToDrawTrainer1[] = _("Player battled to a draw against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!");
 
+static const u8 sText_AFairyMove[] = _("a Fairy-type move");
+
 static const u8 *const sATypeMove_Table[NUMBER_OF_MON_TYPES] =
 {
     [TYPE_NORMAL]   = gText_ANormalMove,
@@ -1392,7 +1394,8 @@ static const u8 *const sATypeMove_Table[NUMBER_OF_MON_TYPES] =
     [TYPE_PSYCHIC]  = gText_APsychicMove,
     [TYPE_ICE]      = gText_AnIceMove,
     [TYPE_DRAGON]   = gText_ADragonMove,
-    [TYPE_DARK]     = gText_ADarkMove
+    [TYPE_DARK]     = gText_ADarkMove,
+    [TYPE_FAIRY]    = sText_AFairyMove
 };
 
 static const u16 sGrammarMoveUsedTable[] =

@@ -2405,6 +2405,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     else
         type = typeOverride & DYNAMIC_TYPE_MASK;
 
+    // Lugia of Serra: Glaciate changes Normal moves into Ice moves.
+    if (attacker->ability == ABILITY_GLACIATE && type == TYPE_NORMAL)
+        type = TYPE_ICE;
+
     attack = attacker->attack;
     defense = defender->defense;
     spAttack = attacker->spAttack;
@@ -5238,6 +5242,10 @@ u16 SpeciesToCryId(u16 species)
 
     if (species <= SPECIES_OLD_UNOWN_Z - 1)
         return SPECIES_UNOWN - 1;
+
+    // New Serra and Calor species reuse a valid placeholder cry until custom cries are added.
+    if (species >= SPECIES_SNOLET - 1 && species <= SPECIES_PERMOSS_C - 1)
+        return SPECIES_SWINUB - 1;
 
     return sHoennSpeciesIdToCryId[species - ((SPECIES_OLD_UNOWN_Z + 1) - 1)];
 }

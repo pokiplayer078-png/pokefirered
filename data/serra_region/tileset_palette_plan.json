@@ -1,0 +1,102 @@
+{
+  "region": "Serra Region",
+  "status": "guia de direção de arte; nenhum arquivo PNG ou binário de tileset foi alterado nesta etapa",
+  "palettes": {
+    "snowfield": [
+      "#F5FAFF",
+      "#DCEAF5",
+      "#AFC8DD",
+      "#7898B6",
+      "#3F5D7A",
+      "#24384F"
+    ],
+    "pineForest": [
+      "#EAF4F4",
+      "#B7D2CD",
+      "#789F95",
+      "#3F716C",
+      "#244C4B",
+      "#183536"
+    ],
+    "aurora": [
+      "#E8F8FF",
+      "#A4E6E8",
+      "#68C6D1",
+      "#6E91C8",
+      "#8E78BD",
+      "#3D426E"
+    ],
+    "volcanic": [
+      "#FFF1DE",
+      "#F4C28B",
+      "#D9865A",
+      "#A94E47",
+      "#5A3E4C",
+      "#293343"
+    ],
+    "iceCave": [
+      "#EFFBFF",
+      "#BDE4F0",
+      "#84B9D4",
+      "#568BAE",
+      "#345A80",
+      "#1E334E"
+    ],
+    "buildings": [
+      "#EAF3F9",
+      "#C8D7E5",
+      "#91AFC7",
+      "#667F9C",
+      "#42566F",
+      "#29384D"
+    ]
+  },
+  "tilesetTargets": [
+    {
+      "base": "general outdoor",
+      "treatment": "substituir grama por neve compacta em áreas abertas; manter variações de pegadas, gelo fino e neve profunda",
+      "collision": "preservar atributos de metatile; neve profunda deve ser bloqueio ou terreno especial explícito"
+    },
+    {
+      "base": "forest",
+      "treatment": "pinheiros com galhos pesados de neve, troncos frios e arbustos cristalizados",
+      "collision": "não alterar a máscara de colisão dos troncos"
+    },
+    {
+      "base": "mountain and cave",
+      "treatment": "paredões azul-acinzentados, cristais, estalactites de gelo e pedras com geada",
+      "collision": "manter degraus, rampas e passagens existentes"
+    },
+    {
+      "base": "coastal",
+      "treatment": "água azul-escura com bordas congeladas e placas de gelo animadas",
+      "collision": "gelo navegável deve ter metatile e regra próprios"
+    },
+    {
+      "base": "town and buildings",
+      "treatment": "telhados cobertos de neve, janelas iluminadas, madeira escura e placas de gelo nas fachadas",
+      "collision": "portas e saídas precisam manter tiles de passagem"
+    },
+    {
+      "base": "gyms",
+      "treatment": "cada ginásio recebe conjunto temático próprio: gelo, mina, vento, canais, forja, espectros, vapor e dragões",
+      "collision": "puzzles devem ser testados com transições e retornos"
+    }
+  ],
+  "pokemonSpriteStyle": {
+    "resolution": "manter a resolução e o enquadramento dos sprites Gen III",
+    "outline": "contorno azul-marinho profundo em vez de preto puro quando combinar com a silhueta",
+    "shading": "sombras frias em 2-3 tons; brilho branco pontual em cristais",
+    "paletteLimit": "preferir 5-8 cores por sprite mais transparência",
+    "readability": "silhueta e contraste devem continuar reconhecíveis em fundo de batalha claro e escuro",
+    "rule": "não aplicar filtro azul global: fogo, veneno, rocha e espécies não-gelo devem manter suas cores de identidade"
+  },
+  "implementationChecklist": [
+    "criar PNGs front/back e ícones para as 80 espécies",
+    "registrar paletas normal e shiny para cada espécie",
+    "integrar tabelas de gráficos, coordenadas, footprints e cry IDs",
+    "criar tilesets e arquivos de paleta novos, com atributos de metatile compatíveis",
+    "adicionar animações de neve, vento e gelo sem alterar colisões por acidente",
+    "validar cada mapa no editor e testar transições, Surf e encontros"
+  ]
+}

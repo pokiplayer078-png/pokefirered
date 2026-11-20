@@ -1283,6 +1283,8 @@ static void Cmd_typecalc(void)
     }
 
     GET_MOVE_TYPE(gCurrentMove, moveType);
+    if (gBattleMons[gBattlerAttacker].ability == ABILITY_GLACIATE && moveType == TYPE_NORMAL)
+        moveType = TYPE_ICE;
 
     // check stab
     if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType))
@@ -1325,6 +1327,48 @@ static void Cmd_typecalc(void)
         }
     }
 
+    // Fairy type effectiveness overlay (the original Gen III chart remains unchanged).
+    if (moveType == TYPE_FAIRY)
+    {
+        u8 defenderTypes[2] = {gBattleMons[gBattlerTarget].type1, gBattleMons[gBattlerTarget].type2};
+        for (i = 0; i < 2; i++)
+        {
+            if (i == 1 && defenderTypes[1] == defenderTypes[0])
+                continue;
+            switch (defenderTypes[i])
+            {
+            case TYPE_FIGHTING:
+            case TYPE_DRAGON:
+            case TYPE_DARK:
+                ModulateDmgByType(TYPE_MUL_SUPER_EFFECTIVE);
+                break;
+            case TYPE_FIRE:
+            case TYPE_POISON:
+            case TYPE_STEEL:
+                ModulateDmgByType(TYPE_MUL_NOT_EFFECTIVE);
+                break;
+            }
+        }
+    }
+    else
+    {
+        u8 defenderTypes[2] = {gBattleMons[gBattlerTarget].type1, gBattleMons[gBattlerTarget].type2};
+        for (i = 0; i < 2; i++)
+        {
+            if (i == 1 && defenderTypes[1] == defenderTypes[0])
+                continue;
+            if (defenderTypes[i] == TYPE_FAIRY)
+            {
+                if (moveType == TYPE_POISON || moveType == TYPE_STEEL)
+                    ModulateDmgByType(TYPE_MUL_SUPER_EFFECTIVE);
+                else if (moveType == TYPE_FIGHTING || moveType == TYPE_BUG || moveType == TYPE_DARK)
+                    ModulateDmgByType(TYPE_MUL_NOT_EFFECTIVE);
+                else if (moveType == TYPE_DRAGON)
+                    ModulateDmgByType(TYPE_MUL_NO_EFFECT);
+            }
+        }
+    }
+
     if (gBattleMons[gBattlerTarget].ability == ABILITY_WONDER_GUARD && AttacksThisTurn(gBattlerAttacker, gCurrentMove) == 2
      && (!(gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE) || ((gMoveResultFlags & (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)) == (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)))
      && gBattleMoves[gCurrentMove].power)
@@ -1352,6 +1396,8 @@ static void CheckWonderGuardAndLevitate(void)
         return;
 
     GET_MOVE_TYPE(gCurrentMove, moveType);
+    if (gBattleMons[gBattlerAttacker].ability == ABILITY_GLACIATE && moveType == TYPE_NORMAL)
+        moveType = TYPE_ICE;
 
     if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {
@@ -4078,6 +4124,8 @@ static void Cmd_moveend(void)
 
     choicedMoveAtk = &gBattleStruct->choicedMove[gBattlerAttacker];
     GET_MOVE_TYPE(gCurrentMove, moveType);
+    if (gBattleMons[gBattlerAttacker].ability == ABILITY_GLACIATE && moveType == TYPE_NORMAL)
+        moveType = TYPE_ICE;
 
     do
     {
