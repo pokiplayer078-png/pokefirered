@@ -2405,6 +2405,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     else
         type = typeOverride & DYNAMIC_TYPE_MASK;
 
+    // Lugia of Serra: Glaciate changes Normal moves into Ice moves.
+    if (attacker->ability == ABILITY_GLACIATE && type == TYPE_NORMAL)
+        type = TYPE_ICE;
+
     attack = attacker->attack;
     defense = defender->defense;
     spAttack = attacker->spAttack;
