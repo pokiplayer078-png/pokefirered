@@ -1,0 +1,248 @@
+{
+  "region": "Serra Region",
+  "centralConflict": "O aquecimento anormal está descongelando a ilha de Serra. Três aves lendárias vindas de Galar — Articuno, Zapdos e Moltres — estão alterando as correntes de ar e espalhando calor extremo. A Ordem do Degelo tenta explorar o fenômeno.",
+  "acts": [
+    {
+      "id": "ACT_1",
+      "title": "O degelo começa",
+      "goal": "Investigar a neve que desaparece perto de Vila Flocos e seguir vestígios de energia térmica.",
+      "beats": [
+        "O jogador recebe seu primeiro Pokémon e conhece o Observatório da Aurora.",
+        "A pesquisadora explica que as temperaturas subiram mesmo durante a noite polar.",
+        "A primeira aparição de uma ave de Galar provoca uma onda de calor e abre uma fenda no gelo."
+      ]
+    },
+    {
+      "id": "ACT_2",
+      "title": "As três sentinelas",
+      "goal": "Encontrar e despertar Articuno, Zapdos e Moltres de Serra.",
+      "beats": [
+        "Cada ave regional protege um santuário em uma parte diferente da ilha.",
+        "Os santuários exigem puzzles ambientais e batalhas contra guardiões.",
+        "Após conquistar as três provas, o jogador recebe três plumas polares."
+      ]
+    },
+    {
+      "id": "ACT_3",
+      "title": "O chamado de Lugia",
+      "goal": "Usar as três plumas no Altar das Correntes para chamar Lugia de Serra.",
+      "beats": [
+        "Lugia surge no coração da tempestade e reconhece o jogador como aliado.",
+        "Lugia de Serra é do tipo Gelo/Fada e possui Glaciate.",
+        "Glaciate converte golpes do tipo Normal em golpes do tipo Gelo quando Lugia os usa."
+      ]
+    },
+    {
+      "id": "ACT_4",
+      "title": "A batalha contra as aves de Galar",
+      "goal": "Ajudar Lugia a enfrentar Articuno, Zapdos e Moltres de Galar.",
+      "beats": [
+        "As três aves de Galar são enfrentadas em batalhas consecutivas, com uma pausa narrativa entre elas.",
+        "A derrota das três interrompe o aquecimento acelerado, mas não restaura imediatamente o clima.",
+        "A Ordem do Degelo perde o controle da energia que extraiu das geleiras."
+      ]
+    },
+    {
+      "id": "ACT_5",
+      "title": "O primeiro amanhecer de Calor",
+      "goal": "Derrotar Ho-Oh da Região de Calor e testemunhar a transformação da ilha.",
+      "beats": [
+        "Ho-Oh de Calor aparece após a derrota das aves de Galar; é do tipo Fada/Fogo e muito poderoso.",
+        "Quando Ho-Oh é derrotado, ele cai e a energia permanece suspensa no ar.",
+        "O gelo não retorna: o degelo para, o clima estabiliza e as terras expostas florescem.",
+        "Uma cena panorâmica revela a Região de Calor, antes escondida sob o gelo."
+      ]
+    }
+  ],
+  "legendaryObjectives": {
+    "serraBirds": [
+      {
+        "species": "ARTICUNO_S",
+        "shrine": "Santuário do Vento Branco",
+        "role": "proteger as correntes frias do norte"
+      },
+      {
+        "species": "ZAPDOS_S",
+        "shrine": "Pico do Trovão Azul",
+        "role": "estabilizar as tempestades elétricas"
+      },
+      {
+        "species": "MOLTRES_S",
+        "shrine": "Fornalha Azul",
+        "role": "manter o equilíbrio térmico das fontes subterrâneas"
+      }
+    ],
+    "galarBirds": [
+      {
+        "species": "ARTICUNO_G",
+        "role": "criar miragens de calor"
+      },
+      {
+        "species": "ZAPDOS_G",
+        "role": "fraturar as geleiras com ondas térmicas"
+      },
+      {
+        "species": "MOLTRES_G",
+        "role": "espalhar fogo sombrio pela vegetação"
+      }
+    ],
+    "serraGuardian": {
+      "species": "LUGIA_S",
+      "types": [
+        "ICE",
+        "FAIRY"
+      ],
+      "ability": "GLACIATE",
+      "abilityRule": "Enquanto este Pokémon estiver em campo, seus golpes de tipo NORMAL são calculados como tipo ICE, inclusive no cálculo de dano e efetividade."
+    },
+    "calorGuardian": {
+      "species": "HO_OH_C",
+      "types": [
+        "FAIRY",
+        "FIRE"
+      ],
+      "role": "chefe final da campanha principal",
+      "postBattle": "A mudança de clima é permanente e abre os acessos de pós-jogo."
+    }
+  },
+  "worldState": {
+    "beforeFinal": "Serra está dividida entre gelo permanente e bolsões de calor anormal; rotas de Calor permanecem inacessíveis.",
+    "afterFinal": "O degelo cessa, as áreas antes congeladas ficam verdes, florescem e passam a ser acessíveis. O gelo restante continua em geleiras e cumes altos.",
+    "saveFlag": "FLAG_SERRA_CALOR_BLOOMED",
+    "persistence": "O estado deve ser salvo permanentemente e persistir após reiniciar a ROM."
+  },
+  "postGame": {
+    "unlock": "A Região de Calor abre após a batalha contra Ho-Oh e a cena de florescimento.",
+    "gyms": [
+      {
+        "order": 1,
+        "city": "Vila Pomar",
+        "leader": "Liora",
+        "type": "GRASS",
+        "badge": "Pétala",
+        "challenge": "caminhos de jardim que mudam conforme o jogador rega os canteiros",
+        "team": [
+          [
+            "MOSSNOW_C",
+            42
+          ],
+          [
+            "FERNICE_C",
+            44
+          ],
+          [
+            "PERMOSS_C",
+            47
+          ]
+        ]
+      },
+      {
+        "order": 2,
+        "city": "Forno Solar",
+        "leader": "Caio",
+        "type": "FIRE",
+        "badge": "Brasa Solar",
+        "challenge": "válvulas de calor abrem portas e ativam plataformas",
+        "team": [
+          [
+            "CINDRIFT_C",
+            48
+          ],
+          [
+            "FROSTASH_C",
+            50
+          ],
+          [
+            "PYRICE_C",
+            53
+          ]
+        ]
+      },
+      {
+        "order": 3,
+        "city": "Baía das Flores",
+        "leader": "Marina",
+        "type": "WATER",
+        "badge": "Maré Clara",
+        "challenge": "canais de água irrigam os terraços e revelam pontes",
+        "team": [
+          [
+            "AURORSEAL",
+            54
+          ],
+          [
+            "RIMEORCA",
+            55
+          ],
+          [
+            "LEVIACER",
+            57
+          ]
+        ]
+      },
+      {
+        "order": 4,
+        "city": "Mirante do Sol",
+        "leader": "Ícaro",
+        "type": "FAIRY",
+        "badge": "Alvorada",
+        "challenge": "espelhos solares devem apontar para quatro torres",
+        "team": [
+          [
+            "MIRRORYX",
+            58
+          ],
+          [
+            "BOREALITH",
+            59
+          ],
+          [
+            "NINETAL_S",
+            60
+          ],
+          [
+            "PERMOSS_C",
+            62
+          ]
+        ]
+      }
+    ],
+    "champion": {
+      "name": "Solene",
+      "title": "Campeã de Calor",
+      "team": [
+        [
+          "PYRICE_C",
+          65
+        ],
+        [
+          "AURORWING",
+          66
+        ],
+        [
+          "BOREALIS",
+          66
+        ],
+        [
+          "THUNDRA",
+          67
+        ],
+        [
+          "PERMOSS_C",
+          68
+        ],
+        [
+          "HO_OH_C",
+          70
+        ]
+      ]
+    },
+    "features": [
+      "novas rotas floridas",
+      "novas espécies e encontros",
+      "formas de Calor para Pokémon originários de Serra",
+      "rematches contra líderes de Serra e Liga",
+      "Torneio das Duas Estações"
+    ]
+  }
+}
