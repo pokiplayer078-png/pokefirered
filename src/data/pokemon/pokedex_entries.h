@@ -6070,4 +6070,159 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = -2,
     },
+    [NATIONAL_DEX_SOLSPROUT] =
+    {
+        .categoryName = _("SUN SEED"),
+        .height = 4,
+        .weight = 52,
+        .description = gSolsproutPokedexText,
+        .unusedDescription = gSolsproutPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_SOLBLOOM] =
+    {
+        .categoryName = _("SUN FLOWER"),
+        .height = 8,
+        .weight = 180,
+        .description = gSolbloomPokedexText,
+        .unusedDescription = gSolbloomPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_SOLARIS] =
+    {
+        .categoryName = _("SOLAR BLOOM"),
+        .height = 15,
+        .weight = 620,
+        .description = gSolarisPokedexText,
+        .unusedDescription = gSolarisPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_CINDRIP] =
+    {
+        .categoryName = _("CINDER LIZARD"),
+        .height = 5,
+        .weight = 95,
+        .description = gCindripPokedexText,
+        .unusedDescription = gCindripPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_MAGMOLT] =
+    {
+        .categoryName = _("MAGMA SHELL"),
+        .height = 9,
+        .weight = 340,
+        .description = gMagmoltPokedexText,
+        .unusedDescription = gMagmoltPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_PYROCLAST] =
+    {
+        .categoryName = _("CALDERA DRAKE"),
+        .height = 18,
+        .weight = 900,
+        .description = gPyroclastPokedexText,
+        .unusedDescription = gPyroclastPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_OASLET] =
+    {
+        .categoryName = _("OASIS SPRITE"),
+        .height = 3,
+        .weight = 35,
+        .description = gOasletPokedexText,
+        .unusedDescription = gOasletPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_MIRAJEL] =
+    {
+        .categoryName = _("MIRAGE FISH"),
+        .height = 8,
+        .weight = 140,
+        .description = gMirajelPokedexText,
+        .unusedDescription = gMirajelPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_MIRAGEEL] =
+    {
+        .categoryName = _("MIRAGE EEL"),
+        .height = 17,
+        .weight = 510,
+        .description = gMirageelPokedexText,
+        .unusedDescription = gMirageelPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_DUSTKIT] =
+    {
+        .categoryName = _("DUNE FOX"),
+        .height = 4,
+        .weight = 75,
+        .description = gDustkitPokedexText,
+        .unusedDescription = gDustkitPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_SANDRAKE] =
+    {
+        .categoryName = _("SAND STALKER"),
+        .height = 10,
+        .weight = 270,
+        .description = gSandrakePokedexText,
+        .unusedDescription = gSandrakePokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
+
+    [NATIONAL_DEX_DUNEPHANT] =
+    {
+        .categoryName = _("DESERT GUARDIAN"),
+        .height = 19,
+        .weight = 980,
+        .description = gDunephantPokedexText,
+        .unusedDescription = gDunephantPokedexTextUnused,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
 };
