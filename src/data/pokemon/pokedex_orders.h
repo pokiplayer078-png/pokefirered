@@ -497,7 +497,6 @@ const u16 gPokedexOrder_Alphabetical[] =
 
 const u16 gPokedexOrder_Weight[] =
 {
-    NATIONAL_DEX_NONE,
     NATIONAL_DEX_GASTLY,
     NATIONAL_DEX_HAUNTER,
     NATIONAL_DEX_HOPPIP,
@@ -968,7 +967,6 @@ const u16 gPokedexOrder_Weight[] =
 
 const u16 gPokedexOrder_Height[] =
 {
-    NATIONAL_DEX_NONE,
     NATIONAL_DEX_AZURILL,
     NATIONAL_DEX_DIGLETT,
     NATIONAL_DEX_ICICLEF,
