@@ -92,6 +92,20 @@ def check() -> None:
         require(f"[SPECIES_{name}]" in species_names,
                 f"Missing display name for {name}.")
 
+    # Evolution chains must stay inside the regional roster and be complete.
+    evolution_data = read("src/data/pokemon/evolution.h")
+    evolution_edges = re.findall(
+        r"^\s*\[SPECIES_([A-Z0-9_]+)\]\s*=\s*\{\{EVO_LEVEL,\s*(\d+),\s*SPECIES_([A-Z0-9_]+)\}\}",
+        evolution_data,
+        re.M,
+    )
+    regional_edges = [(source, target) for source, _, target in evolution_edges if source in set(all_names)]
+    require(len(regional_edges) == 68, f"Expected 68 regional evolution links; found {len(regional_edges)}.")
+    require(len({source for source, _ in regional_edges}) == 68,
+            "Regional evolution table has duplicate source species.")
+    require(all(source in set(all_names) and target in set(all_names) for source, target in regional_edges),
+            "Regional evolution link points outside the custom roster.")
+
     # Validate stat blocks, abilities, and EV totals.
     info = read("src/data/pokemon/species_info.h")
     for name in all_names:
@@ -116,6 +130,29 @@ def check() -> None:
             for key in stat_keys
         ]
         require(sum(evs) in (1, 2, 3), f"Invalid EV yield total for {name}: {sum(evs)}.")
+
+    # Glaciate must be a named ability and be implemented in both battle damage and STAB/type checks.
+    ability_constants = read("include/constants/abilities.h")
+    ability_text = read("src/data/text/abilities.h")
+    battle_scripts = read("src/battle_script_commands.c")
+    pokemon_damage = read("src/pokemon.c")
+    require("#define ABILITY_GLACIATE 78" in ability_constants,
+            "Glaciate ability constant is missing or has moved.")
+    require("[ABILITY_GLACIATE] = _(" in ability_text
+            and "sGlaciateDescription" in ability_text,
+            "Glaciate ability name or description is missing.")
+    require("ABILITY_GLACIATE && moveType == TYPE_NORMAL" in battle_scripts,
+            "Glaciate is not applied in the battle type/STAB script.")
+    require("attacker->ability == ABILITY_GLACIATE && type == TYPE_NORMAL" in pokemon_damage,
+            "Glaciate is not applied in the base damage calculation.")
+    require("[SPECIES_LUGIA_S]" in info
+            and ".types = {TYPE_ICE, TYPE_FAIRY}" in re.search(
+                r"\[SPECIES_LUGIA_S\]\s*=\s*\{(.*?)^\s*\},", info, re.M | re.S
+            ).group(1)
+            and ".abilities = {ABILITY_GLACIATE, ABILITY_NONE}" in re.search(
+                r"\[SPECIES_LUGIA_S\]\s*=\s*\{(.*?)^\s*\},", info, re.M | re.S
+            ).group(1),
+            "Serra Lugia must be Ice/Fairy and carry Glaciate.")
 
     # The 92 original species have independent Pokédex pages. The 21 forms share base entries.
     entries = read("src/data/pokemon/pokedex_entries.h")
