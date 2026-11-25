@@ -1,0 +1,2756 @@
+{
+  "region": "Serra Region",
+  "regionalDexCount": 101,
+  "note": "Catálogo interno expandido para a Serra Region. As formas regionais são registradas como espécies internas próprias no FireRed; os recursos gráficos definitivos serão adicionados em etapa separada.",
+  "species": [
+    {
+      "regionalDex": 1,
+      "name": "SNOLET",
+      "types": [
+        "ICE"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 42,
+        "defense": 65,
+        "speed": 32,
+        "spAttack": 45,
+        "spDefense": 48,
+        "total": 300
+      },
+      "ability": "Thick Fat",
+      "evolution": {
+        "method": "level",
+        "level": 16,
+        "to": "GLACUB"
+      },
+      "habitat": "Bosque do Norte e Encosta Branca",
+      "design": "urso polar de focinho azul e patas com cristais de gelo",
+      "dexEntry": "Urso polar de focinho azul e patas com cristais de gelo. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 2,
+      "name": "GLACUB",
+      "types": [
+        "ICE"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 59,
+        "defense": 82,
+        "speed": 49,
+        "spAttack": 62,
+        "spDefense": 65,
+        "total": 402
+      },
+      "ability": "Thick Fat",
+      "evolution": {
+        "method": "level",
+        "level": 34,
+        "to": "BEARICE"
+      },
+      "habitat": "Bosque do Norte e Encosta Branca",
+      "design": "urso polar de focinho azul e patas com cristais de gelo",
+      "dexEntry": "Urso polar de focinho azul e patas com cristais de gelo. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 3,
+      "name": "BEARICE",
+      "types": [
+        "ICE",
+        "FIGHTING"
+      ],
+      "stats": {
+        "hp": 103,
+        "attack": 77,
+        "defense": 100,
+        "speed": 67,
+        "spAttack": 80,
+        "spDefense": 83,
+        "total": 510
+      },
+      "ability": "Thick Fat",
+      "evolution": null,
+      "habitat": "Bosque do Norte e Encosta Branca",
+      "design": "urso polar de focinho azul e patas com cristais de gelo",
+      "dexEntry": "Urso polar de focinho azul e patas com cristais de gelo. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 4,
+      "name": "PUPSNOW",
+      "types": [
+        "ICE",
+        "NORMAL"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 48,
+        "defense": 42,
+        "speed": 78,
+        "spAttack": 48,
+        "spDefense": 42,
+        "total": 300
+      },
+      "ability": "Run Away",
+      "evolution": {
+        "method": "level",
+        "level": 17,
+        "to": "FROSTAG"
+      },
+      "habitat": "Campos de Neve e Vale Aurora",
+      "design": "filhote de cervo que desenvolve galhadas luminosas como auroras",
+      "dexEntry": "Filhote de cervo que desenvolve galhadas luminosas como auroras. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 5,
+      "name": "FROSTAG",
+      "types": [
+        "ICE",
+        "NORMAL"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 65,
+        "defense": 59,
+        "speed": 95,
+        "spAttack": 65,
+        "spDefense": 59,
+        "total": 402
+      },
+      "ability": "Run Away",
+      "evolution": {
+        "method": "level",
+        "level": 35,
+        "to": "AURORUN"
+      },
+      "habitat": "Campos de Neve e Vale Aurora",
+      "design": "filhote de cervo que desenvolve galhadas luminosas como auroras",
+      "dexEntry": "Filhote de cervo que desenvolve galhadas luminosas como auroras. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 6,
+      "name": "AURORUN",
+      "types": [
+        "ICE",
+        "PSYCHIC"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 83,
+        "defense": 77,
+        "speed": 113,
+        "spAttack": 83,
+        "spDefense": 77,
+        "total": 510
+      },
+      "ability": "Run Away",
+      "evolution": null,
+      "habitat": "Campos de Neve e Vale Aurora",
+      "design": "filhote de cervo que desenvolve galhadas luminosas como auroras",
+      "dexEntry": "Filhote de cervo que desenvolve galhadas luminosas como auroras. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 7,
+      "name": "IRONIP",
+      "types": [
+        "ICE"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 70,
+        "defense": 50,
+        "speed": 55,
+        "spAttack": 35,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Sturdy",
+      "evolution": {
+        "method": "level",
+        "level": 18,
+        "to": "FERRITK"
+      },
+      "habitat": "Minas de Prata e Caverna Ferrugem",
+      "design": "pequeno mamífero blindado por placas metálicas congeladas",
+      "dexEntry": "Pequeno mamífero blindado por placas metálicas congeladas. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 8,
+      "name": "FERRITK",
+      "types": [
+        "ICE",
+        "STEEL"
+      ],
+      "stats": {
+        "hp": 67,
+        "attack": 87,
+        "defense": 67,
+        "speed": 72,
+        "spAttack": 52,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Sturdy",
+      "evolution": {
+        "method": "level",
+        "level": 36,
+        "to": "CRYOTYR"
+      },
+      "habitat": "Minas de Prata e Caverna Ferrugem",
+      "design": "pequeno mamífero blindado por placas metálicas congeladas",
+      "dexEntry": "Pequeno mamífero blindado por placas metálicas congeladas. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 9,
+      "name": "CRYOTYR",
+      "types": [
+        "ICE",
+        "STEEL"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 105,
+        "defense": 85,
+        "speed": 90,
+        "spAttack": 70,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Sturdy",
+      "evolution": null,
+      "habitat": "Minas de Prata e Caverna Ferrugem",
+      "design": "pequeno mamífero blindado por placas metálicas congeladas",
+      "dexEntry": "Pequeno mamífero blindado por placas metálicas congeladas. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 10,
+      "name": "WRAITH",
+      "types": [
+        "GHOST"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 40,
+        "defense": 48,
+        "speed": 55,
+        "spAttack": 75,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Levitate",
+      "evolution": {
+        "method": "level",
+        "level": 19,
+        "to": "CHILUME"
+      },
+      "habitat": "Ruínas do Silêncio e Cemitério Glacial",
+      "design": "espírito que vive em lanternas abandonadas sob a neve",
+      "dexEntry": "Espírito que vive em lanternas abandonadas sob a neve. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 11,
+      "name": "CHILUME",
+      "types": [
+        "GHOST",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 57,
+        "defense": 65,
+        "speed": 72,
+        "spAttack": 92,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Levitate",
+      "evolution": {
+        "method": "level",
+        "level": 37,
+        "to": "GLOOMICE"
+      },
+      "habitat": "Ruínas do Silêncio e Cemitério Glacial",
+      "design": "espírito que vive em lanternas abandonadas sob a neve",
+      "dexEntry": "Espírito que vive em lanternas abandonadas sob a neve. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 12,
+      "name": "GLOOMICE",
+      "types": [
+        "GHOST",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 75,
+        "defense": 83,
+        "speed": 90,
+        "spAttack": 110,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Levitate",
+      "evolution": null,
+      "habitat": "Ruínas do Silêncio e Cemitério Glacial",
+      "design": "espírito que vive em lanternas abandonadas sob a neve",
+      "dexEntry": "Espírito que vive em lanternas abandonadas sob a neve. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 13,
+      "name": "PENGLIT",
+      "types": [
+        "WATER"
+      ],
+      "stats": {
+        "hp": 48,
+        "attack": 50,
+        "defense": 48,
+        "speed": 50,
+        "spAttack": 52,
+        "spDefense": 52,
+        "total": 300
+      },
+      "ability": "Torrent",
+      "evolution": {
+        "method": "level",
+        "level": 20,
+        "to": "GLACIAN"
+      },
+      "habitat": "Porto Boreal e Baía Congelada",
+      "design": "pinguim costeiro com coroa de gelo e nadadeiras em forma de remo",
+      "dexEntry": "Pinguim costeiro com coroa de gelo e nadadeiras em forma de remo. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 14,
+      "name": "GLACIAN",
+      "types": [
+        "WATER",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 67,
+        "defense": 65,
+        "speed": 67,
+        "spAttack": 69,
+        "spDefense": 69,
+        "total": 402
+      },
+      "ability": "Torrent",
+      "evolution": {
+        "method": "level",
+        "level": 38,
+        "to": "EMPEROR"
+      },
+      "habitat": "Porto Boreal e Baía Congelada",
+      "design": "pinguim costeiro com coroa de gelo e nadadeiras em forma de remo",
+      "dexEntry": "Pinguim costeiro com coroa de gelo e nadadeiras em forma de remo. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 15,
+      "name": "EMPEROR",
+      "types": [
+        "WATER",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 83,
+        "attack": 85,
+        "defense": 83,
+        "speed": 85,
+        "spAttack": 87,
+        "spDefense": 87,
+        "total": 510
+      },
+      "ability": "Torrent",
+      "evolution": null,
+      "habitat": "Porto Boreal e Baía Congelada",
+      "design": "pinguim costeiro com coroa de gelo e nadadeiras em forma de remo",
+      "dexEntry": "Pinguim costeiro com coroa de gelo e nadadeiras em forma de remo. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 16,
+      "name": "DRACUB",
+      "types": [
+        "DRAGON"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 70,
+        "defense": 50,
+        "speed": 55,
+        "spAttack": 35,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Intimidate",
+      "evolution": {
+        "method": "level",
+        "level": 16,
+        "to": "SKALICE"
+      },
+      "habitat": "Pico das Nuvens e Cume do Dragão",
+      "design": "réptil alpino que acumula neve entre escamas cristalinas",
+      "dexEntry": "Réptil alpino que acumula neve entre escamas cristalinas. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 17,
+      "name": "SKALICE",
+      "types": [
+        "DRAGON",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 67,
+        "attack": 87,
+        "defense": 67,
+        "speed": 72,
+        "spAttack": 52,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Intimidate",
+      "evolution": {
+        "method": "level",
+        "level": 39,
+        "to": "NIVADRA"
+      },
+      "habitat": "Pico das Nuvens e Cume do Dragão",
+      "design": "réptil alpino que acumula neve entre escamas cristalinas",
+      "dexEntry": "Réptil alpino que acumula neve entre escamas cristalinas. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 18,
+      "name": "NIVADRA",
+      "types": [
+        "DRAGON",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 105,
+        "defense": 85,
+        "speed": 90,
+        "spAttack": 70,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Intimidate",
+      "evolution": null,
+      "habitat": "Pico das Nuvens e Cume do Dragão",
+      "design": "réptil alpino que acumula neve entre escamas cristalinas",
+      "dexEntry": "Réptil alpino que acumula neve entre escamas cristalinas. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 19,
+      "name": "CINDRIFT",
+      "types": [
+        "FIRE"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 40,
+        "defense": 48,
+        "speed": 55,
+        "spAttack": 75,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Flame Body",
+      "evolution": {
+        "method": "level",
+        "level": 17,
+        "to": "FROSTASH"
+      },
+      "habitat": "Fontes Termais e Caldeira Invernal",
+      "design": "raposa de vapor que mantém uma chama azul sob a pelagem branca",
+      "dexEntry": "Raposa de vapor que mantém uma chama azul sob a pelagem branca. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 20,
+      "name": "FROSTASH",
+      "types": [
+        "FIRE",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 57,
+        "defense": 65,
+        "speed": 72,
+        "spAttack": 92,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Flame Body",
+      "evolution": {
+        "method": "level",
+        "level": 34,
+        "to": "PYRICE"
+      },
+      "habitat": "Fontes Termais e Caldeira Invernal",
+      "design": "raposa de vapor que mantém uma chama azul sob a pelagem branca",
+      "dexEntry": "Raposa de vapor que mantém uma chama azul sob a pelagem branca. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 21,
+      "name": "PYRICE",
+      "types": [
+        "FIRE",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 75,
+        "defense": 83,
+        "speed": 90,
+        "spAttack": 110,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Flame Body",
+      "evolution": null,
+      "habitat": "Fontes Termais e Caldeira Invernal",
+      "design": "raposa de vapor que mantém uma chama azul sob a pelagem branca",
+      "dexEntry": "Raposa de vapor que mantém uma chama azul sob a pelagem branca. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 22,
+      "name": "MOSSNOW",
+      "types": [
+        "GRASS"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 40,
+        "defense": 48,
+        "speed": 55,
+        "spAttack": 75,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Natural Cure",
+      "evolution": {
+        "method": "level",
+        "level": 18,
+        "to": "FERNICE"
+      },
+      "habitat": "Floresta Pinhal e Bosque Nevado",
+      "design": "broto de pinheiro que cresce em camadas de gelo e musgo",
+      "dexEntry": "Broto de pinheiro que cresce em camadas de gelo e musgo. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 23,
+      "name": "FERNICE",
+      "types": [
+        "GRASS",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 57,
+        "defense": 65,
+        "speed": 72,
+        "spAttack": 92,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Natural Cure",
+      "evolution": {
+        "method": "level",
+        "level": 35,
+        "to": "PERMOSS"
+      },
+      "habitat": "Floresta Pinhal e Bosque Nevado",
+      "design": "broto de pinheiro que cresce em camadas de gelo e musgo",
+      "dexEntry": "Broto de pinheiro que cresce em camadas de gelo e musgo. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 24,
+      "name": "PERMOSS",
+      "types": [
+        "GRASS",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 75,
+        "defense": 83,
+        "speed": 90,
+        "spAttack": 110,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Natural Cure",
+      "evolution": null,
+      "habitat": "Floresta Pinhal e Bosque Nevado",
+      "design": "broto de pinheiro que cresce em camadas de gelo e musgo",
+      "dexEntry": "Broto de pinheiro que cresce em camadas de gelo e musgo. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 25,
+      "name": "TUNDRAK",
+      "types": [
+        "BUG"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 48,
+        "defense": 42,
+        "speed": 78,
+        "spAttack": 48,
+        "spDefense": 42,
+        "total": 300
+      },
+      "ability": "Swarm",
+      "evolution": {
+        "method": "level",
+        "level": 19,
+        "to": "NIVALVA"
+      },
+      "habitat": "Túneis da Tundra e Campos de Neve",
+      "design": "inseto de casca azul que constrói túneis sob a neve",
+      "dexEntry": "Inseto de casca azul que constrói túneis sob a neve. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 26,
+      "name": "NIVALVA",
+      "types": [
+        "BUG",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 65,
+        "defense": 59,
+        "speed": 95,
+        "spAttack": 65,
+        "spDefense": 59,
+        "total": 402
+      },
+      "ability": "Swarm",
+      "evolution": {
+        "method": "level",
+        "level": 36,
+        "to": "BOREALIS"
+      },
+      "habitat": "Túneis da Tundra e Campos de Neve",
+      "design": "inseto de casca azul que constrói túneis sob a neve",
+      "dexEntry": "Inseto de casca azul que constrói túneis sob a neve. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 27,
+      "name": "BOREALIS",
+      "types": [
+        "BUG",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 83,
+        "defense": 77,
+        "speed": 113,
+        "spAttack": 83,
+        "spDefense": 77,
+        "total": 510
+      },
+      "ability": "Swarm",
+      "evolution": null,
+      "habitat": "Túneis da Tundra e Campos de Neve",
+      "design": "inseto de casca azul que constrói túneis sob a neve",
+      "dexEntry": "Inseto de casca azul que constrói túneis sob a neve. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 28,
+      "name": "OWLIT",
+      "types": [
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 48,
+        "defense": 42,
+        "speed": 78,
+        "spAttack": 48,
+        "spDefense": 42,
+        "total": 300
+      },
+      "ability": "Keen Eye",
+      "evolution": {
+        "method": "level",
+        "level": 20,
+        "to": "SNOWL"
+      },
+      "habitat": "Pinheiros Altos e Rota do Penhasco",
+      "design": "coruja que enxerga rastros de calor durante nevascas",
+      "dexEntry": "Coruja que enxerga rastros de calor durante nevascas. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 29,
+      "name": "SNOWL",
+      "types": [
+        "ICE",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 65,
+        "defense": 59,
+        "speed": 95,
+        "spAttack": 65,
+        "spDefense": 59,
+        "total": 402
+      },
+      "ability": "Keen Eye",
+      "evolution": {
+        "method": "level",
+        "level": 37,
+        "to": "NOCTURN"
+      },
+      "habitat": "Pinheiros Altos e Rota do Penhasco",
+      "design": "coruja que enxerga rastros de calor durante nevascas",
+      "dexEntry": "Coruja que enxerga rastros de calor durante nevascas. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 30,
+      "name": "NOCTURN",
+      "types": [
+        "ICE",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 83,
+        "defense": 77,
+        "speed": 113,
+        "spAttack": 83,
+        "spDefense": 77,
+        "total": 510
+      },
+      "ability": "Keen Eye",
+      "evolution": null,
+      "habitat": "Pinheiros Altos e Rota do Penhasco",
+      "design": "coruja que enxerga rastros de calor durante nevascas",
+      "dexEntry": "Coruja que enxerga rastros de calor durante nevascas. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 31,
+      "name": "SEALLET",
+      "types": [
+        "WATER"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 42,
+        "defense": 65,
+        "speed": 32,
+        "spAttack": 45,
+        "spDefense": 48,
+        "total": 300
+      },
+      "ability": "Water Absorb",
+      "evolution": {
+        "method": "level",
+        "level": 16,
+        "to": "GLACIAL"
+      },
+      "habitat": "Baía Congelada e Enseada das Focas",
+      "design": "foca que cria um escudo de gelo ao redor do corpo",
+      "dexEntry": "Foca que cria um escudo de gelo ao redor do corpo. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 32,
+      "name": "GLACIAL",
+      "types": [
+        "WATER",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 59,
+        "defense": 82,
+        "speed": 49,
+        "spAttack": 62,
+        "spDefense": 65,
+        "total": 402
+      },
+      "ability": "Water Absorb",
+      "evolution": {
+        "method": "level",
+        "level": 38,
+        "to": "AURORSEAL"
+      },
+      "habitat": "Baía Congelada e Enseada das Focas",
+      "design": "foca que cria um escudo de gelo ao redor do corpo",
+      "dexEntry": "Foca que cria um escudo de gelo ao redor do corpo. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 33,
+      "name": "AURORSEAL",
+      "types": [
+        "WATER",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 103,
+        "attack": 77,
+        "defense": 100,
+        "speed": 67,
+        "spAttack": 80,
+        "spDefense": 83,
+        "total": 510
+      },
+      "ability": "Water Absorb",
+      "evolution": null,
+      "habitat": "Baía Congelada e Enseada das Focas",
+      "design": "foca que cria um escudo de gelo ao redor do corpo",
+      "dexEntry": "Foca que cria um escudo de gelo ao redor do corpo. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 34,
+      "name": "BERGIT",
+      "types": [
+        "ROCK"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 42,
+        "defense": 65,
+        "speed": 32,
+        "spAttack": 45,
+        "spDefense": 48,
+        "total": 300
+      },
+      "ability": "Rock Head",
+      "evolution": {
+        "method": "level",
+        "level": 17,
+        "to": "GLACER"
+      },
+      "habitat": "Pedreira Boreal e Passagem de Granito",
+      "design": "golem formado por pedras de geleira e minerais azuis",
+      "dexEntry": "Golem formado por pedras de geleira e minerais azuis. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 35,
+      "name": "GLACER",
+      "types": [
+        "ROCK",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 59,
+        "defense": 82,
+        "speed": 49,
+        "spAttack": 62,
+        "spDefense": 65,
+        "total": 402
+      },
+      "ability": "Rock Head",
+      "evolution": {
+        "method": "level",
+        "level": 39,
+        "to": "GLACIGOL"
+      },
+      "habitat": "Pedreira Boreal e Passagem de Granito",
+      "design": "golem formado por pedras de geleira e minerais azuis",
+      "dexEntry": "Golem formado por pedras de geleira e minerais azuis. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 36,
+      "name": "GLACIGOL",
+      "types": [
+        "ROCK",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 103,
+        "attack": 77,
+        "defense": 100,
+        "speed": 67,
+        "spAttack": 80,
+        "spDefense": 83,
+        "total": 510
+      },
+      "ability": "Rock Head",
+      "evolution": null,
+      "habitat": "Pedreira Boreal e Passagem de Granito",
+      "design": "golem formado por pedras de geleira e minerais azuis",
+      "dexEntry": "Golem formado por pedras de geleira e minerais azuis. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 37,
+      "name": "VOLTIK",
+      "types": [
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 48,
+        "defense": 42,
+        "speed": 78,
+        "spAttack": 48,
+        "spDefense": 42,
+        "total": 300
+      },
+      "ability": "Static",
+      "evolution": {
+        "method": "level",
+        "level": 18,
+        "to": "STORMELK"
+      },
+      "habitat": "Planície da Tempestade e Vale Aurora",
+      "design": "alce que armazena eletricidade nos chifres cobertos de neve",
+      "dexEntry": "Alce que armazena eletricidade nos chifres cobertos de neve. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 38,
+      "name": "STORMELK",
+      "types": [
+        "ELECTRIC",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 65,
+        "defense": 59,
+        "speed": 95,
+        "spAttack": 65,
+        "spDefense": 59,
+        "total": 402
+      },
+      "ability": "Static",
+      "evolution": {
+        "method": "level",
+        "level": 34,
+        "to": "THUNDRA"
+      },
+      "habitat": "Planície da Tempestade e Vale Aurora",
+      "design": "alce que armazena eletricidade nos chifres cobertos de neve",
+      "dexEntry": "Alce que armazena eletricidade nos chifres cobertos de neve. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 39,
+      "name": "THUNDRA",
+      "types": [
+        "ELECTRIC",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 83,
+        "defense": 77,
+        "speed": 113,
+        "spAttack": 83,
+        "spDefense": 77,
+        "total": 510
+      },
+      "ability": "Static",
+      "evolution": null,
+      "habitat": "Planície da Tempestade e Vale Aurora",
+      "design": "alce que armazena eletricidade nos chifres cobertos de neve",
+      "dexEntry": "Alce que armazena eletricidade nos chifres cobertos de neve. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 40,
+      "name": "HUSHOW",
+      "types": [
+        "GHOST"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 40,
+        "defense": 48,
+        "speed": 55,
+        "spAttack": 75,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Insomnia",
+      "evolution": {
+        "method": "level",
+        "level": 19,
+        "to": "WRAITHEN"
+      },
+      "habitat": "Ruínas do Silêncio e Torre do Crepúsculo",
+      "design": "corvo espectral que apaga sons e deixa penas congeladas",
+      "dexEntry": "Corvo espectral que apaga sons e deixa penas congeladas. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 41,
+      "name": "WRAITHEN",
+      "types": [
+        "GHOST",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 57,
+        "defense": 65,
+        "speed": 72,
+        "spAttack": 92,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Insomnia",
+      "evolution": {
+        "method": "level",
+        "level": 35,
+        "to": "UMBRICE"
+      },
+      "habitat": "Ruínas do Silêncio e Torre do Crepúsculo",
+      "design": "corvo espectral que apaga sons e deixa penas congeladas",
+      "dexEntry": "Corvo espectral que apaga sons e deixa penas congeladas. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 42,
+      "name": "UMBRICE",
+      "types": [
+        "GHOST",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 75,
+        "defense": 83,
+        "speed": 90,
+        "spAttack": 110,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Insomnia",
+      "evolution": null,
+      "habitat": "Ruínas do Silêncio e Torre do Crepúsculo",
+      "design": "corvo espectral que apaga sons e deixa penas congeladas",
+      "dexEntry": "Corvo espectral que apaga sons e deixa penas congeladas. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 43,
+      "name": "FLURRY",
+      "types": [
+        "NORMAL"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 48,
+        "defense": 42,
+        "speed": 78,
+        "spAttack": 48,
+        "spDefense": 42,
+        "total": 300
+      },
+      "ability": "Run Away",
+      "evolution": {
+        "method": "level",
+        "level": 20,
+        "to": "RABBLIT"
+      },
+      "habitat": "Campos de Neve e Rota da Avalanche",
+      "design": "lebre veloz que dispara avalanches ao correr pela encosta",
+      "dexEntry": "Lebre veloz que dispara avalanches ao correr pela encosta. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 44,
+      "name": "RABBLIT",
+      "types": [
+        "NORMAL",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 65,
+        "defense": 59,
+        "speed": 95,
+        "spAttack": 65,
+        "spDefense": 59,
+        "total": 402
+      },
+      "ability": "Run Away",
+      "evolution": {
+        "method": "level",
+        "level": 36,
+        "to": "AVALYNX"
+      },
+      "habitat": "Campos de Neve e Rota da Avalanche",
+      "design": "lebre veloz que dispara avalanches ao correr pela encosta",
+      "dexEntry": "Lebre veloz que dispara avalanches ao correr pela encosta. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 45,
+      "name": "AVALYNX",
+      "types": [
+        "NORMAL",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 83,
+        "defense": 77,
+        "speed": 113,
+        "spAttack": 83,
+        "spDefense": 77,
+        "total": 510
+      },
+      "ability": "Run Away",
+      "evolution": null,
+      "habitat": "Campos de Neve e Rota da Avalanche",
+      "design": "lebre veloz que dispara avalanches ao correr pela encosta",
+      "dexEntry": "Lebre veloz que dispara avalanches ao correr pela encosta. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 46,
+      "name": "MIRRIT",
+      "types": [
+        "PSYCHIC"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 40,
+        "defense": 48,
+        "speed": 55,
+        "spAttack": 75,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Synchronize",
+      "evolution": {
+        "method": "level",
+        "level": 16,
+        "to": "MIRRORYX"
+      },
+      "habitat": "Vale Aurora e Observatório",
+      "design": "antílope de cristal que reflete luzes e ilusões nas galhadas",
+      "dexEntry": "Antílope de cristal que reflete luzes e ilusões nas galhadas. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 47,
+      "name": "MIRRORYX",
+      "types": [
+        "PSYCHIC",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 57,
+        "defense": 65,
+        "speed": 72,
+        "spAttack": 92,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Synchronize",
+      "evolution": {
+        "method": "level",
+        "level": 37,
+        "to": "BOREALITH"
+      },
+      "habitat": "Vale Aurora e Observatório",
+      "design": "antílope de cristal que reflete luzes e ilusões nas galhadas",
+      "dexEntry": "Antílope de cristal que reflete luzes e ilusões nas galhadas. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 48,
+      "name": "BOREALITH",
+      "types": [
+        "PSYCHIC",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 75,
+        "defense": 83,
+        "speed": 90,
+        "spAttack": 110,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Synchronize",
+      "evolution": null,
+      "habitat": "Vale Aurora e Observatório",
+      "design": "antílope de cristal que reflete luzes e ilusões nas galhadas",
+      "dexEntry": "Antílope de cristal que reflete luzes e ilusões nas galhadas. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 49,
+      "name": "FINLET",
+      "types": [
+        "WATER"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 70,
+        "defense": 50,
+        "speed": 55,
+        "spAttack": 35,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Swift Swim",
+      "evolution": {
+        "method": "level",
+        "level": 17,
+        "to": "GLACFIN"
+      },
+      "habitat": "Baía Congelada e Mar de Serra",
+      "design": "peixe de águas frias que evolui em uma orca de nadadeiras serrilhadas",
+      "dexEntry": "Peixe de águas frias que evolui em uma orca de nadadeiras serrilhadas. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 50,
+      "name": "GLACFIN",
+      "types": [
+        "WATER"
+      ],
+      "stats": {
+        "hp": 67,
+        "attack": 87,
+        "defense": 67,
+        "speed": 72,
+        "spAttack": 52,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Swift Swim",
+      "evolution": {
+        "method": "level",
+        "level": 38,
+        "to": "RIMEORCA"
+      },
+      "habitat": "Baía Congelada e Mar de Serra",
+      "design": "peixe de águas frias que evolui em uma orca de nadadeiras serrilhadas",
+      "dexEntry": "Peixe de águas frias que evolui em uma orca de nadadeiras serrilhadas. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 51,
+      "name": "RIMEORCA",
+      "types": [
+        "WATER",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 105,
+        "defense": 85,
+        "speed": 90,
+        "spAttack": 70,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Swift Swim",
+      "evolution": null,
+      "habitat": "Baía Congelada e Mar de Serra",
+      "design": "peixe de águas frias que evolui em uma orca de nadadeiras serrilhadas",
+      "dexEntry": "Peixe de águas frias que evolui em uma orca de nadadeiras serrilhadas. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 52,
+      "name": "ICICLEF",
+      "types": [
+        "GRASS"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 40,
+        "defense": 48,
+        "speed": 55,
+        "spAttack": 75,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Chlorophyll",
+      "evolution": {
+        "method": "level",
+        "level": 18,
+        "to": "SPRICLEAF"
+      },
+      "habitat": "Jardim Alpino e Floresta Pinhal",
+      "design": "flor alpina com pétalas de gelo que florescem sob a luz da lua",
+      "dexEntry": "Flor alpina com pétalas de gelo que florescem sob a luz da lua. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 53,
+      "name": "SPRICLEAF",
+      "types": [
+        "GRASS",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 57,
+        "defense": 65,
+        "speed": 72,
+        "spAttack": 92,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Chlorophyll",
+      "evolution": {
+        "method": "level",
+        "level": 39,
+        "to": "FROSTBLOOM"
+      },
+      "habitat": "Jardim Alpino e Floresta Pinhal",
+      "design": "flor alpina com pétalas de gelo que florescem sob a luz da lua",
+      "dexEntry": "Flor alpina com pétalas de gelo que florescem sob a luz da lua. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 54,
+      "name": "FROSTBLOOM",
+      "types": [
+        "GRASS",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 75,
+        "defense": 83,
+        "speed": 90,
+        "spAttack": 110,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Chlorophyll",
+      "evolution": null,
+      "habitat": "Jardim Alpino e Floresta Pinhal",
+      "design": "flor alpina com pétalas de gelo que florescem sob a luz da lua",
+      "dexEntry": "Flor alpina com pétalas de gelo que florescem sob a luz da lua. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 55,
+      "name": "MOLEICE",
+      "types": [
+        "GROUND"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 70,
+        "defense": 50,
+        "speed": 55,
+        "spAttack": 35,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Sand Veil",
+      "evolution": {
+        "method": "level",
+        "level": 19,
+        "to": "BURROWST"
+      },
+      "habitat": "Túneis da Tundra e Minas de Prata",
+      "design": "toupeira que escava galerias aquecidas por rochas subterrâneas",
+      "dexEntry": "Toupeira que escava galerias aquecidas por rochas subterrâneas. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 56,
+      "name": "BURROWST",
+      "types": [
+        "GROUND",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 67,
+        "attack": 87,
+        "defense": 67,
+        "speed": 72,
+        "spAttack": 52,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Sand Veil",
+      "evolution": {
+        "method": "level",
+        "level": 34,
+        "to": "TUNDRILL"
+      },
+      "habitat": "Túneis da Tundra e Minas de Prata",
+      "design": "toupeira que escava galerias aquecidas por rochas subterrâneas",
+      "dexEntry": "Toupeira que escava galerias aquecidas por rochas subterrâneas. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 57,
+      "name": "TUNDRILL",
+      "types": [
+        "GROUND",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 105,
+        "defense": 85,
+        "speed": 90,
+        "spAttack": 70,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Sand Veil",
+      "evolution": null,
+      "habitat": "Túneis da Tundra e Minas de Prata",
+      "design": "toupeira que escava galerias aquecidas por rochas subterrâneas",
+      "dexEntry": "Toupeira que escava galerias aquecidas por rochas subterrâneas. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 58,
+      "name": "PUGILIT",
+      "types": [
+        "FIGHTING"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 70,
+        "defense": 50,
+        "speed": 55,
+        "spAttack": 35,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Guts",
+      "evolution": {
+        "method": "level",
+        "level": 20,
+        "to": "AEGIRUSH"
+      },
+      "habitat": "Dojo da Montanha e Trilha do Monge",
+      "design": "lutador de montanha que cobre os punhos com gelo compacto",
+      "dexEntry": "Lutador de montanha que cobre os punhos com gelo compacto. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 59,
+      "name": "AEGIRUSH",
+      "types": [
+        "FIGHTING",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 67,
+        "attack": 87,
+        "defense": 67,
+        "speed": 72,
+        "spAttack": 52,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Guts",
+      "evolution": {
+        "method": "level",
+        "level": 35,
+        "to": "FROSTKNIT"
+      },
+      "habitat": "Dojo da Montanha e Trilha do Monge",
+      "design": "lutador de montanha que cobre os punhos com gelo compacto",
+      "dexEntry": "Lutador de montanha que cobre os punhos com gelo compacto. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 60,
+      "name": "FROSTKNIT",
+      "types": [
+        "FIGHTING",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 105,
+        "defense": 85,
+        "speed": 90,
+        "spAttack": 70,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Guts",
+      "evolution": null,
+      "habitat": "Dojo da Montanha e Trilha do Monge",
+      "design": "lutador de montanha que cobre os punhos com gelo compacto",
+      "dexEntry": "Lutador de montanha que cobre os punhos com gelo compacto. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 61,
+      "name": "POISONET",
+      "types": [
+        "POISON"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 48,
+        "defense": 42,
+        "speed": 78,
+        "spAttack": 48,
+        "spDefense": 42,
+        "total": 300
+      },
+      "ability": "Shed Skin",
+      "evolution": {
+        "method": "level",
+        "level": 16,
+        "to": "VENOMELT"
+      },
+      "habitat": "Pântano Congelado e Caverna Ferrugem",
+      "design": "víbora cujo veneno cristaliza ao entrar em contato com o ar",
+      "dexEntry": "Víbora cujo veneno cristaliza ao entrar em contato com o ar. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 62,
+      "name": "VENOMELT",
+      "types": [
+        "POISON",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 65,
+        "defense": 59,
+        "speed": 95,
+        "spAttack": 65,
+        "spDefense": 59,
+        "total": 402
+      },
+      "ability": "Shed Skin",
+      "evolution": {
+        "method": "level",
+        "level": 36,
+        "to": "CRYOVIPER"
+      },
+      "habitat": "Pântano Congelado e Caverna Ferrugem",
+      "design": "víbora cujo veneno cristaliza ao entrar em contato com o ar",
+      "dexEntry": "Víbora cujo veneno cristaliza ao entrar em contato com o ar. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 63,
+      "name": "CRYOVIPER",
+      "types": [
+        "POISON",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 83,
+        "defense": 77,
+        "speed": 113,
+        "spAttack": 83,
+        "spDefense": 77,
+        "total": 510
+      },
+      "ability": "Shed Skin",
+      "evolution": null,
+      "habitat": "Pântano Congelado e Caverna Ferrugem",
+      "design": "víbora cujo veneno cristaliza ao entrar em contato com o ar",
+      "dexEntry": "Víbora cujo veneno cristaliza ao entrar em contato com o ar. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 64,
+      "name": "DRIFLET",
+      "types": [
+        "BUG",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 48,
+        "defense": 42,
+        "speed": 78,
+        "spAttack": 48,
+        "spDefense": 42,
+        "total": 300
+      },
+      "ability": "Compound Eyes",
+      "evolution": {
+        "method": "level",
+        "level": 17,
+        "to": "SNOWMOTH"
+      },
+      "habitat": "Vale Aurora e Jardim Alpino",
+      "design": "mariposa que dispersa pó brilhante parecido com neve auroral",
+      "dexEntry": "Mariposa que dispersa pó brilhante parecido com neve auroral. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 65,
+      "name": "SNOWMOTH",
+      "types": [
+        "BUG",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 65,
+        "defense": 59,
+        "speed": 95,
+        "spAttack": 65,
+        "spDefense": 59,
+        "total": 402
+      },
+      "ability": "Compound Eyes",
+      "evolution": {
+        "method": "level",
+        "level": 37,
+        "to": "AURORWING"
+      },
+      "habitat": "Vale Aurora e Jardim Alpino",
+      "design": "mariposa que dispersa pó brilhante parecido com neve auroral",
+      "dexEntry": "Mariposa que dispersa pó brilhante parecido com neve auroral. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 66,
+      "name": "AURORWING",
+      "types": [
+        "ICE",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 83,
+        "defense": 77,
+        "speed": 113,
+        "spAttack": 83,
+        "spDefense": 77,
+        "total": 510
+      },
+      "ability": "Compound Eyes",
+      "evolution": null,
+      "habitat": "Vale Aurora e Jardim Alpino",
+      "design": "mariposa que dispersa pó brilhante parecido com neve auroral",
+      "dexEntry": "Mariposa que dispersa pó brilhante parecido com neve auroral. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 67,
+      "name": "PEBBLIT",
+      "types": [
+        "ROCK"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 42,
+        "defense": 65,
+        "speed": 32,
+        "spAttack": 45,
+        "spDefense": 48,
+        "total": 300
+      },
+      "ability": "Sturdy",
+      "evolution": {
+        "method": "level",
+        "level": 18,
+        "to": "SNOWSTONE"
+      },
+      "habitat": "Pedreira Boreal e Pico das Nuvens",
+      "design": "lagarto mineral que carrega uma crista de pedra congelada",
+      "dexEntry": "Lagarto mineral que carrega uma crista de pedra congelada. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 68,
+      "name": "SNOWSTONE",
+      "types": [
+        "ROCK",
+        "GROUND"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 59,
+        "defense": 82,
+        "speed": 49,
+        "spAttack": 62,
+        "spDefense": 65,
+        "total": 402
+      },
+      "ability": "Sturdy",
+      "evolution": {
+        "method": "level",
+        "level": 38,
+        "to": "TUNDRAGON"
+      },
+      "habitat": "Pedreira Boreal e Pico das Nuvens",
+      "design": "lagarto mineral que carrega uma crista de pedra congelada",
+      "dexEntry": "Lagarto mineral que carrega uma crista de pedra congelada. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 69,
+      "name": "TUNDRAGON",
+      "types": [
+        "ROCK",
+        "DRAGON"
+      ],
+      "stats": {
+        "hp": 103,
+        "attack": 77,
+        "defense": 100,
+        "speed": 67,
+        "spAttack": 80,
+        "spDefense": 83,
+        "total": 510
+      },
+      "ability": "Sturdy",
+      "evolution": null,
+      "habitat": "Pedreira Boreal e Pico das Nuvens",
+      "design": "lagarto mineral que carrega uma crista de pedra congelada",
+      "dexEntry": "Lagarto mineral que carrega uma crista de pedra congelada. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 70,
+      "name": "ASHLET",
+      "types": [
+        "FIRE"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 40,
+        "defense": 48,
+        "speed": 55,
+        "spAttack": 75,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Magma Armor",
+      "evolution": {
+        "method": "level",
+        "level": 19,
+        "to": "ASHFLAKE"
+      },
+      "habitat": "Caldeira Invernal e Fontes Termais",
+      "design": "lagarto vulcânico que derrete a neve e deixa trilhas de obsidiana",
+      "dexEntry": "Lagarto vulcânico que derrete a neve e deixa trilhas de obsidiana. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 71,
+      "name": "ASHFLAKE",
+      "types": [
+        "FIRE",
+        "GROUND"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 57,
+        "defense": 65,
+        "speed": 72,
+        "spAttack": 92,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Magma Armor",
+      "evolution": {
+        "method": "level",
+        "level": 39,
+        "to": "VOLCARIME"
+      },
+      "habitat": "Caldeira Invernal e Fontes Termais",
+      "design": "lagarto vulcânico que derrete a neve e deixa trilhas de obsidiana",
+      "dexEntry": "Lagarto vulcânico que derrete a neve e deixa trilhas de obsidiana. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 72,
+      "name": "VOLCARIME",
+      "types": [
+        "FIRE",
+        "GROUND"
+      ],
+      "stats": {
+        "hp": 77,
+        "attack": 75,
+        "defense": 83,
+        "speed": 90,
+        "spAttack": 110,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Magma Armor",
+      "evolution": null,
+      "habitat": "Caldeira Invernal e Fontes Termais",
+      "design": "lagarto vulcânico que derrete a neve e deixa trilhas de obsidiana",
+      "dexEntry": "Lagarto vulcânico que derrete a neve e deixa trilhas de obsidiana. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 73,
+      "name": "ICECLAM",
+      "types": [
+        "WATER"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 42,
+        "defense": 65,
+        "speed": 32,
+        "spAttack": 45,
+        "spDefense": 48,
+        "total": 300
+      },
+      "ability": "Shell Armor",
+      "evolution": {
+        "method": "level",
+        "level": 20,
+        "to": "RIMESHELL"
+      },
+      "habitat": "Mar de Serra e Baía Congelada",
+      "design": "molusco de concha metálica que protege recifes sob o gelo",
+      "dexEntry": "Molusco de concha metálica que protege recifes sob o gelo. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 74,
+      "name": "RIMESHELL",
+      "types": [
+        "WATER",
+        "STEEL"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 59,
+        "defense": 82,
+        "speed": 49,
+        "spAttack": 62,
+        "spDefense": 65,
+        "total": 402
+      },
+      "ability": "Shell Armor",
+      "evolution": {
+        "method": "level",
+        "level": 34,
+        "to": "LEVIACER"
+      },
+      "habitat": "Mar de Serra e Baía Congelada",
+      "design": "molusco de concha metálica que protege recifes sob o gelo",
+      "dexEntry": "Molusco de concha metálica que protege recifes sob o gelo. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 75,
+      "name": "LEVIACER",
+      "types": [
+        "WATER",
+        "STEEL"
+      ],
+      "stats": {
+        "hp": 103,
+        "attack": 77,
+        "defense": 100,
+        "speed": 67,
+        "spAttack": 80,
+        "spDefense": 83,
+        "total": 510
+      },
+      "ability": "Shell Armor",
+      "evolution": null,
+      "habitat": "Mar de Serra e Baía Congelada",
+      "design": "molusco de concha metálica que protege recifes sob o gelo",
+      "dexEntry": "Molusco de concha metálica que protege recifes sob o gelo. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 76,
+      "name": "GLACISAU",
+      "types": [
+        "ROCK"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 70,
+        "defense": 50,
+        "speed": 55,
+        "spAttack": 35,
+        "spDefense": 40,
+        "total": 300
+      },
+      "ability": "Rock Head",
+      "evolution": {
+        "method": "level",
+        "level": 16,
+        "to": "CRYOSAUR"
+      },
+      "habitat": "Fóssil da Geleira e Caverna Antiga",
+      "design": "fóssil de réptil ancestral preservado em uma geleira",
+      "dexEntry": "Fóssil de réptil ancestral preservado em uma geleira. Ainda está aprendendo a sobreviver às tempestades."
+    },
+    {
+      "regionalDex": 77,
+      "name": "CRYOSAUR",
+      "types": [
+        "ROCK",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 67,
+        "attack": 87,
+        "defense": 67,
+        "speed": 72,
+        "spAttack": 52,
+        "spDefense": 57,
+        "total": 402
+      },
+      "ability": "Rock Head",
+      "evolution": {
+        "method": "level",
+        "level": 35,
+        "to": "GLACIODON"
+      },
+      "habitat": "Fóssil da Geleira e Caverna Antiga",
+      "design": "fóssil de réptil ancestral preservado em uma geleira",
+      "dexEntry": "Fóssil de réptil ancestral preservado em uma geleira. Seu corpo já suporta longas jornadas na neve."
+    },
+    {
+      "regionalDex": 78,
+      "name": "GLACIODON",
+      "types": [
+        "ROCK",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 105,
+        "defense": 85,
+        "speed": 90,
+        "spAttack": 70,
+        "spDefense": 75,
+        "total": 510
+      },
+      "ability": "Rock Head",
+      "evolution": null,
+      "habitat": "Fóssil da Geleira e Caverna Antiga",
+      "design": "fóssil de réptil ancestral preservado em uma geleira",
+      "dexEntry": "Fóssil de réptil ancestral preservado em uma geleira. É uma das espécies mais adaptadas às montanhas de Serra."
+    },
+    {
+      "regionalDex": 79,
+      "name": "BOREAS",
+      "types": [
+        "ICE",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 90,
+        "defense": 90,
+        "speed": 120,
+        "spAttack": 110,
+        "spDefense": 110,
+        "total": 620
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Santuário da Aurora",
+      "design": "ave lendária de quatro asas com plumagem azul-pálida e penas como cristais",
+      "dexEntry": "Dizem que suas asas conduzem as correntes de ar que formam as auroras de Serra."
+    },
+    {
+      "regionalDex": 80,
+      "name": "SOLSTICE",
+      "types": [
+        "ICE",
+        "FIRE"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 115,
+        "defense": 95,
+        "speed": 90,
+        "spAttack": 125,
+        "spDefense": 105,
+        "total": 635
+      },
+      "ability": "Flame Body",
+      "evolution": null,
+      "habitat": "Coração da Caldeira Invernal",
+      "design": "lince lendário com juba de neve e uma chama azul no peito",
+      "dexEntry": "Mantém o equilíbrio térmico da região: sua presença impede que o gelo eterno consuma as fontes termais."
+    },
+    {
+      "regionalDex": 81,
+      "name": "ARTICUNO_S",
+      "types": [
+        "ICE",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "speed": 85,
+        "spAttack": 105,
+        "spDefense": 125,
+        "total": 590
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Articuno adaptada à ecologia local",
+      "dexEntry": "Forma de Serra que conduz correntes polares e acalma nevascas."
+    },
+    {
+      "regionalDex": 82,
+      "name": "ZAPDOS_S",
+      "types": [
+        "ICE",
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 95,
+        "defense": 85,
+        "speed": 110,
+        "spAttack": 120,
+        "spDefense": 90,
+        "total": 590
+      },
+      "ability": "Static",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Zapdos adaptada à ecologia local",
+      "dexEntry": "Armazena eletricidade estática em penas cobertas por cristais de gelo."
+    },
+    {
+      "regionalDex": 83,
+      "name": "MOLTRES_S",
+      "types": [
+        "FIRE",
+        "ICE"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "speed": 90,
+        "spAttack": 115,
+        "spDefense": 100,
+        "total": 585
+      },
+      "ability": "Flame Body",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Moltres adaptada à ecologia local",
+      "dexEntry": "Sua chama azul aquece o ar sem derreter as geleiras ao redor."
+    },
+    {
+      "regionalDex": 84,
+      "name": "ARTICUNO_G",
+      "types": [
+        "PSYCHIC",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 85,
+        "speed": 95,
+        "spAttack": 125,
+        "spDefense": 100,
+        "total": 580
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Articuno adaptada à ecologia local",
+      "dexEntry": "A ave de Galar distorce o calor em miragens que enfraquecem a neve."
+    },
+    {
+      "regionalDex": 85,
+      "name": "ZAPDOS_G",
+      "types": [
+        "FIGHTING",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 125,
+        "defense": 90,
+        "speed": 100,
+        "spAttack": 85,
+        "spDefense": 90,
+        "total": 580
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Zapdos adaptada à ecologia local",
+      "dexEntry": "Suas passadas liberam ondas de calor que racham o gelo antigo."
+    },
+    {
+      "regionalDex": 86,
+      "name": "MOLTRES_G",
+      "types": [
+        "DARK",
+        "FLYING"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 90,
+        "speed": 90,
+        "spAttack": 125,
+        "spDefense": 100,
+        "total": 580
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Moltres adaptada à ecologia local",
+      "dexEntry": "Suas chamas sombrias aquecem o solo e deixam a vegetação seca."
+    },
+    {
+      "regionalDex": 87,
+      "name": "LUGIA_S",
+      "types": [
+        "ICE",
+        "FAIRY"
+      ],
+      "stats": {
+        "hp": 106,
+        "attack": 90,
+        "defense": 130,
+        "speed": 110,
+        "spAttack": 110,
+        "spDefense": 154,
+        "total": 700
+      },
+      "ability": "Glaciate",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Lugia adaptada à ecologia local",
+      "dexEntry": "Guardião das correntes frias, desperta quando as três aves de Serra se reúnem."
+    },
+    {
+      "regionalDex": 88,
+      "name": "HO_OH_C",
+      "types": [
+        "FAIRY",
+        "FIRE"
+      ],
+      "stats": {
+        "hp": 106,
+        "attack": 130,
+        "defense": 90,
+        "speed": 110,
+        "spAttack": 154,
+        "spDefense": 100,
+        "total": 690
+      },
+      "ability": "Pressure",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Ho-Oh adaptada à ecologia local",
+      "dexEntry": "A ave da Região de Calor desperta flores e vida onde o gelo enfim repousa."
+    },
+    {
+      "regionalDex": 89,
+      "name": "VULPIX_S",
+      "types": [
+        "ICE"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "speed": 65,
+        "spAttack": 50,
+        "spDefense": 65,
+        "total": 299
+      },
+      "ability": "Flash Fire",
+      "evolution": {
+        "method": "level",
+        "level": 35,
+        "to": "NINETAL_S"
+      },
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Vulpix adaptada à ecologia local",
+      "dexEntry": "Sua pelagem conserva o frio das montanhas mesmo nas noites sem neve."
+    },
+    {
+      "regionalDex": 90,
+      "name": "NINETAL_S",
+      "types": [
+        "ICE",
+        "FAIRY"
+      ],
+      "stats": {
+        "hp": 73,
+        "attack": 76,
+        "defense": 75,
+        "speed": 100,
+        "spAttack": 81,
+        "spDefense": 100,
+        "total": 505
+      },
+      "ability": "Flash Fire",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Ninetales adaptada à ecologia local",
+      "dexEntry": "As nove caudas formam véus de geada que brilham como estrelas."
+    },
+    {
+      "regionalDex": 91,
+      "name": "SANDSH_S",
+      "types": [
+        "ICE",
+        "STEEL"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 90,
+        "speed": 40,
+        "spAttack": 10,
+        "spDefense": 35,
+        "total": 300
+      },
+      "ability": "Sand Veil",
+      "evolution": {
+        "method": "level",
+        "level": 22,
+        "to": "SANDSL_S"
+      },
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Sandshrew adaptada à ecologia local",
+      "dexEntry": "Escava túneis sob o gelo usando pequenas placas metálicas nas patas."
+    },
+    {
+      "regionalDex": 92,
+      "name": "SANDSL_S",
+      "types": [
+        "ICE",
+        "STEEL"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 120,
+        "speed": 65,
+        "spAttack": 25,
+        "spDefense": 65,
+        "total": 450
+      },
+      "ability": "Sturdy",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Sandslash adaptada à ecologia local",
+      "dexEntry": "Suas lâminas de gelo e aço cortam paredes congeladas."
+    },
+    {
+      "regionalDex": 93,
+      "name": "GEODUDE_S",
+      "types": [
+        "ROCK",
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "speed": 20,
+        "spAttack": 30,
+        "spDefense": 30,
+        "total": 300
+      },
+      "ability": "Sturdy",
+      "evolution": {
+        "method": "level",
+        "level": 25,
+        "to": "GRAVELER_S"
+      },
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Geodude adaptada à ecologia local",
+      "dexEntry": "Pedras magnéticas atraem fragmentos metálicos das geleiras."
+    },
+    {
+      "regionalDex": 94,
+      "name": "GRAVELER_S",
+      "types": [
+        "ROCK",
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "speed": 35,
+        "spAttack": 45,
+        "spDefense": 45,
+        "total": 390
+      },
+      "ability": "Rock Head",
+      "evolution": {
+        "method": "level",
+        "level": 42,
+        "to": "GOLEM_S"
+      },
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Graveler adaptada à ecologia local",
+      "dexEntry": "Rola por encostas carregando energia nas placas minerais."
+    },
+    {
+      "regionalDex": 95,
+      "name": "GOLEM_S",
+      "types": [
+        "ROCK",
+        "ELECTRIC"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 120,
+        "defense": 130,
+        "speed": 45,
+        "spAttack": 55,
+        "spDefense": 65,
+        "total": 495
+      },
+      "ability": "Sturdy",
+      "evolution": null,
+      "habitat": "Rotas, geleiras e santuários de Serra",
+      "design": "Forma regional de Golem adaptada à ecologia local",
+      "dexEntry": "Sua carapaça armazena relâmpagos que iluminam cavernas profundas."
+    },
+    {
+      "regionalDex": 96,
+      "name": "CINDRIFT_C",
+      "types": [
+        "FIRE",
+        "GRASS"
+      ],
+      "stats": {
+        "hp": 42,
+        "attack": 52,
+        "defense": 45,
+        "speed": 70,
+        "spAttack": 68,
+        "spDefense": 50,
+        "total": 327
+      },
+      "ability": "Flash Fire",
+      "evolution": {
+        "method": "level",
+        "level": 32,
+        "to": "FROSTASH_C"
+      },
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Cindrift adaptada à ecologia local",
+      "dexEntry": "Flores de brasa crescem entre seus pelos quando a Região de Calor floresce."
+    },
+    {
+      "regionalDex": 97,
+      "name": "FROSTASH_C",
+      "types": [
+        "FIRE",
+        "GRASS"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 65,
+        "defense": 55,
+        "speed": 85,
+        "spAttack": 88,
+        "spDefense": 62,
+        "total": 413
+      },
+      "ability": "Flame Body",
+      "evolution": {
+        "method": "level",
+        "level": 44,
+        "to": "PYRICE_C"
+      },
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Frostash adaptada à ecologia local",
+      "dexEntry": "Sua juba libera pólen quente que alimenta os jardins de Calor."
+    },
+    {
+      "regionalDex": 98,
+      "name": "PYRICE_C",
+      "types": [
+        "FIRE",
+        "GRASS"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 92,
+        "defense": 75,
+        "speed": 105,
+        "spAttack": 115,
+        "spDefense": 88,
+        "total": 555
+      },
+      "ability": "Flame Body",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Pyrice adaptada à ecologia local",
+      "dexEntry": "Corre por campos floridos deixando sementes aquecidas em seu rastro."
+    },
+    {
+      "regionalDex": 99,
+      "name": "MOSSNOW_C",
+      "types": [
+        "GRASS",
+        "GROUND"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 45,
+        "defense": 50,
+        "speed": 35,
+        "spAttack": 60,
+        "spDefense": 55,
+        "total": 290
+      },
+      "ability": "Natural Cure",
+      "evolution": {
+        "method": "level",
+        "level": 16,
+        "to": "FERNICE_C"
+      },
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Mossnow adaptada à ecologia local",
+      "dexEntry": "Brota em solo recém-descongelado e absorve água mineral."
+    },
+    {
+      "regionalDex": 100,
+      "name": "FERNICE_C",
+      "types": [
+        "GRASS",
+        "GROUND"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 60,
+        "defense": 65,
+        "speed": 50,
+        "spAttack": 80,
+        "spDefense": 70,
+        "total": 385
+      },
+      "ability": "Chlorophyll",
+      "evolution": {
+        "method": "level",
+        "level": 32,
+        "to": "PERMOSS_C"
+      },
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Fernice adaptada à ecologia local",
+      "dexEntry": "Suas folhas largas protegem pequenos brotos do sol forte."
+    },
+    {
+      "regionalDex": 101,
+      "name": "PERMOSS_C",
+      "types": [
+        "GRASS",
+        "FAIRY"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 80,
+        "defense": 90,
+        "speed": 60,
+        "spAttack": 110,
+        "spDefense": 105,
+        "total": 530
+      },
+      "ability": "Natural Cure",
+      "evolution": null,
+      "habitat": "Região de Calor",
+      "design": "Forma regional de Permoss adaptada à ecologia local",
+      "dexEntry": "Suas flores sustentam a vida que retorna aos vales de Calor."
+    }
+  ],
+  "evolutionFamilies": [
+    {
+      "family": "SNOLET",
+      "line": [
+        "SNOLET",
+        "GLACUB",
+        "BEARICE"
+      ],
+      "levels": [
+        16,
+        34
+      ]
+    },
+    {
+      "family": "PUPSNOW",
+      "line": [
+        "PUPSNOW",
+        "FROSTAG",
+        "AURORUN"
+      ],
+      "levels": [
+        17,
+        35
+      ]
+    },
+    {
+      "family": "IRONIP",
+      "line": [
+        "IRONIP",
+        "FERRITK",
+        "CRYOTYR"
+      ],
+      "levels": [
+        18,
+        36
+      ]
+    },
+    {
+      "family": "WRAITH",
+      "line": [
+        "WRAITH",
+        "CHILUME",
+        "GLOOMICE"
+      ],
+      "levels": [
+        19,
+        37
+      ]
+    },
+    {
+      "family": "PENGLIT",
+      "line": [
+        "PENGLIT",
+        "GLACIAN",
+        "EMPEROR"
+      ],
+      "levels": [
+        20,
+        38
+      ]
+    },
+    {
+      "family": "DRACUB",
+      "line": [
+        "DRACUB",
+        "SKALICE",
+        "NIVADRA"
+      ],
+      "levels": [
+        16,
+        39
+      ]
+    },
+    {
+      "family": "CINDRIFT",
+      "line": [
+        "CINDRIFT",
+        "FROSTASH",
+        "PYRICE"
+      ],
+      "levels": [
+        17,
+        34
+      ]
+    },
+    {
+      "family": "MOSSNOW",
+      "line": [
+        "MOSSNOW",
+        "FERNICE",
+        "PERMOSS"
+      ],
+      "levels": [
+        18,
+        35
+      ]
+    },
+    {
+      "family": "TUNDRAK",
+      "line": [
+        "TUNDRAK",
+        "NIVALVA",
+        "BOREALIS"
+      ],
+      "levels": [
+        19,
+        36
+      ]
+    },
+    {
+      "family": "OWLIT",
+      "line": [
+        "OWLIT",
+        "SNOWL",
+        "NOCTURN"
+      ],
+      "levels": [
+        20,
+        37
+      ]
+    },
+    {
+      "family": "SEALLET",
+      "line": [
+        "SEALLET",
+        "GLACIAL",
+        "AURORSEAL"
+      ],
+      "levels": [
+        16,
+        38
+      ]
+    },
+    {
+      "family": "BERGIT",
+      "line": [
+        "BERGIT",
+        "GLACER",
+        "GLACIGOL"
+      ],
+      "levels": [
+        17,
+        39
+      ]
+    },
+    {
+      "family": "VOLTIK",
+      "line": [
+        "VOLTIK",
+        "STORMELK",
+        "THUNDRA"
+      ],
+      "levels": [
+        18,
+        34
+      ]
+    },
+    {
+      "family": "HUSHOW",
+      "line": [
+        "HUSHOW",
+        "WRAITHEN",
+        "UMBRICE"
+      ],
+      "levels": [
+        19,
+        35
+      ]
+    },
+    {
+      "family": "FLURRY",
+      "line": [
+        "FLURRY",
+        "RABBLIT",
+        "AVALYNX"
+      ],
+      "levels": [
+        20,
+        36
+      ]
+    },
+    {
+      "family": "MIRRIT",
+      "line": [
+        "MIRRIT",
+        "MIRRORYX",
+        "BOREALITH"
+      ],
+      "levels": [
+        16,
+        37
+      ]
+    },
+    {
+      "family": "FINLET",
+      "line": [
+        "FINLET",
+        "GLACFIN",
+        "RIMEORCA"
+      ],
+      "levels": [
+        17,
+        38
+      ]
+    },
+    {
+      "family": "ICICLEF",
+      "line": [
+        "ICICLEF",
+        "SPRICLEAF",
+        "FROSTBLOOM"
+      ],
+      "levels": [
+        18,
+        39
+      ]
+    },
+    {
+      "family": "MOLEICE",
+      "line": [
+        "MOLEICE",
+        "BURROWST",
+        "TUNDRILL"
+      ],
+      "levels": [
+        19,
+        34
+      ]
+    },
+    {
+      "family": "PUGILIT",
+      "line": [
+        "PUGILIT",
+        "AEGIRUSH",
+        "FROSTKNIT"
+      ],
+      "levels": [
+        20,
+        35
+      ]
+    },
+    {
+      "family": "POISONET",
+      "line": [
+        "POISONET",
+        "VENOMELT",
+        "CRYOVIPER"
+      ],
+      "levels": [
+        16,
+        36
+      ]
+    },
+    {
+      "family": "DRIFLET",
+      "line": [
+        "DRIFLET",
+        "SNOWMOTH",
+        "AURORWING"
+      ],
+      "levels": [
+        17,
+        37
+      ]
+    },
+    {
+      "family": "PEBBLIT",
+      "line": [
+        "PEBBLIT",
+        "SNOWSTONE",
+        "TUNDRAGON"
+      ],
+      "levels": [
+        18,
+        38
+      ]
+    },
+    {
+      "family": "ASHLET",
+      "line": [
+        "ASHLET",
+        "ASHFLAKE",
+        "VOLCARIME"
+      ],
+      "levels": [
+        19,
+        39
+      ]
+    },
+    {
+      "family": "ICECLAM",
+      "line": [
+        "ICECLAM",
+        "RIMESHELL",
+        "LEVIACER"
+      ],
+      "levels": [
+        20,
+        34
+      ]
+    },
+    {
+      "family": "GLACISAU",
+      "line": [
+        "GLACISAU",
+        "CRYOSAUR",
+        "GLACIODON"
+      ],
+      "levels": [
+        16,
+        35
+      ]
+    }
+  ]
+}

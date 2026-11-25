@@ -307,6 +307,9 @@
 #define VAR_0x40FE                 0x40FE
 #define VAR_0x40FF                 0x40FF
 
+#define VAR_SERRA_STORY_STEP       VAR_0x40FC
+#define VAR_SERRA_CALOR_STATE      VAR_0x40FD
+
 #define VARS_END                   0x40FF
 #define VARS_COUNT                 (VARS_END - VARS_START + 1)
 

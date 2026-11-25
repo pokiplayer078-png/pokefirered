@@ -3,3 +3,6 @@
 #elif defined(LEAFGREEN)
 #include "pokedex_text_lg.h"
 #endif
+
+#include "pokedex_text_serra.h"
+#include "pokedex_text_calor.h"

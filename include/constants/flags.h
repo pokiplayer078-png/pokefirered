@@ -1523,6 +1523,15 @@
 #define FLAG_0x8FE                                                  (SYS_FLAGS + 0xFE)
 #define FLAG_0x8FF                                                  (SYS_FLAGS + 0xFF)
 
+// Serra Region persistent story progression (reserved save flags).
+#define FLAG_SERRA_STARTER_GIVEN          FLAG_0x8F9
+#define FLAG_SERRA_ARTICUNO_CAUGHT       FLAG_0x8FA
+#define FLAG_SERRA_ZAPDOS_CAUGHT         FLAG_0x8FB
+#define FLAG_SERRA_MOLTRES_CAUGHT        FLAG_0x8FC
+#define FLAG_SERRA_LUGIA_CALLED          FLAG_0x8FD
+#define FLAG_SERRA_GALAR_BIRDS_DEFEATED  FLAG_0x8FE
+#define FLAG_SERRA_CALOR_BLOOMED         FLAG_0x8FF
+
 #define FLAGS_COUNT (FLAG_0x8FF + 1)
 
 // Special Flags (Stored in EWRAM (sSpecialFlags, not in the SaveBlock)
