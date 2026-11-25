@@ -3,32 +3,32 @@ VilaFlocos_Text_Sign::
     .string "A neve guarda os segredos de SERRA.$"
 
 VilaFlocos_Text_Researcher::
-    .string "Bem-vindo a SERRA!\\p"
-    .string "A ilha está mudando. As geleiras\\n"
-    .string "estão começando a derreter.\\p"
-    .string "Escolha um dos três parceiros\\n"
-    .string "que preparei para sua jornada.\\p"
-    .string "Cada um tem um caminho evolutivo\\n"
+    .string "Bem-vindo a SERRA!\p"
+    .string "A ilha está mudando. As geleiras\n"
+    .string "estão começando a derreter.\p"
+    .string "Escolha um dos três parceiros\n"
+    .string "que preparei para sua jornada.\p"
+    .string "Cada um tem um caminho evolutivo\n"
     .string "e habilidades diferentes.$"
 
 VilaFlocos_Text_ChooseSnolet::
-    .string "SNOLET: um pequeno Pokémon de gelo.\\p"
-    .string "Sua evolução final desperta o poder\\n"
-    .string "ELÉTRICO além do tipo GELO.\\p"
+    .string "SNOLET: um pequeno Pokémon de gelo.\p"
+    .string "Sua evolução final desperta o poder\n"
+    .string "ELÉTRICO além do tipo GELO.\p"
     .string "Você escolheu SNOLET!$"
 
 VilaFlocos_Text_ChooseDracub::
-    .string "DRACUB: um filhote de natureza\\n"
-    .string "TERRESTRE, forte e resistente.\\p"
-    .string "No estágio final, desperta o tipo\\n"
-    .string "DRAGÃO junto ao TERRESTRE.\\p"
+    .string "DRACUB: um filhote de natureza\n"
+    .string "TERRESTRE, forte e resistente.\p"
+    .string "No estágio final, desperta o tipo\n"
+    .string "DRAGÃO junto ao TERRESTRE.\p"
     .string "Você escolheu DRACUB!$"
 
 VilaFlocos_Text_ChooseIronip::
-    .string "IRONIP: uma criatura metálica\\n"
-    .string "adaptada às águas geladas.\\p"
-    .string "Será sempre dos tipos AÇO e ÁGUA,\\n"
-    .string "em todas as suas evoluções.\\p"
+    .string "IRONIP: uma criatura metálica\n"
+    .string "adaptada às águas geladas.\p"
+    .string "Será sempre dos tipos AÇO e ÁGUA,\n"
+    .string "em todas as suas evoluções.\p"
     .string "Você escolheu IRONIP!$"
 
 VilaFlocos_Text_ReceivedSnolet::
@@ -41,7 +41,7 @@ VilaFlocos_Text_ReceivedIronip::
     .string "Você recebeu IRONIP!$"
 
 VilaFlocos_Text_AlreadyGotStarter::
-    .string "Você já escolheu seu parceiro.\\n"
+    .string "Você já escolheu seu parceiro.\n"
     .string "Cuide bem dele!$"
 
 VilaFlocos_Text_Lugia::
