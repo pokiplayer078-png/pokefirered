@@ -207,6 +207,26 @@ def check() -> None:
             and "i < POKEDEX_ORDER_TYPE_COUNT" in pokedex_screen,
             "Pokédex ordered-list loops are not bounded by their actual array sizes.")
 
+    # Party icons and their palette indices must be populated for every custom species/form.
+    icon_source = read("src/pokemon_icon.c")
+    icon_table = re.search(
+        r"const u8 \*const gMonIconTable\[\]\s*=\s*\{(.*?)^\};",
+        icon_source,
+        re.M | re.S,
+    )
+    icon_palette_table = re.search(
+        r"const u8 gMonIconPaletteIndices\[\]\s*=\s*\{(.*?)^\};",
+        icon_source,
+        re.M | re.S,
+    )
+    require(icon_table is not None and icon_palette_table is not None,
+            "Could not find the party icon or icon palette tables.")
+    for name in all_names:
+        require(re.search(rf"\[SPECIES_{re.escape(name)}\]\s*=\s*gMonIcon_", icon_table.group(1)),
+                f"Missing party icon for {name}.")
+        require(re.search(rf"\[SPECIES_{re.escape(name)}\]\s*=\s*[0-2],", icon_palette_table.group(1)),
+                f"Missing or invalid party icon palette index for {name}.")
+
     # Species-indexed National Dex and cry maps must span the complete expanded range.
     pokemon_source = read("src/pokemon.c")
     dex_map_match = re.search(
