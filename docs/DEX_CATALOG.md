@@ -109,7 +109,9 @@ These rules are an initial balance pass. Trainer teams, encounter rates, and in-
 - The expanded alphabetical list retains the legacy Old Unown values outside the active dex limit, matching the pre-existing layout.
 - Each of the 92 original Serra/Calor species has a dedicated English Pokédex text record.
 - All 113 custom species/forms resolve to the cry used by their aliased base sprite, rather than all sharing a single Swinub cry.
-- TM/HM and tutor tables now extend through species ID 524, so newly added regional species do not index beyond those unsized arrays.
+- TM/HM and tutor tables now extend through species ID 524, with all 101 Serra species/forms inheriting the compatibility of their current base sprites and the twelve original Calor species using explicit tailored compatibility.
+- The Pokédex's fixed-width category labels are capped at eleven visible characters, leaving room for the required string terminator in the twelve-byte buffer.
+- Alphabetical and type ordering loops now use explicit array-size constants (503 and 502 respectively) rather than iterating to the species count, preventing out-of-bounds reads.
 
 ## Remaining quality gates
 
