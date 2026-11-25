@@ -21,8 +21,10 @@ def require(condition: bool, message: str) -> None:
 
 
 def missing_entries(source: str, pattern: str, names: list[str]) -> list[str]:
-    regex = re.compile(pattern)
-    return [name for name in names if not regex.search(source.replace("{NAME}", name))]
+    return [
+        name for name in names
+        if not re.search(pattern.replace("{NAME}", re.escape(name)), source)
+    ]
 
 
 def custom_species() -> list[tuple[int, str]]:
