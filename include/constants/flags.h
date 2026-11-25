@@ -1524,6 +1524,7 @@
 #define FLAG_0x8FF                                                  (SYS_FLAGS + 0xFF)
 
 // Serra Region persistent story progression (reserved save flags).
+#define FLAG_SERRA_HO_OH_REVIVED         FLAG_0x8F8
 #define FLAG_SERRA_STARTER_GIVEN          FLAG_0x8F9
 #define FLAG_SERRA_ARTICUNO_CAUGHT       FLAG_0x8FA
 #define FLAG_SERRA_ZAPDOS_CAUGHT         FLAG_0x8FB
