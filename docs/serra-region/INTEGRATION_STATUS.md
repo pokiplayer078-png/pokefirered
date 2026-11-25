@@ -63,3 +63,14 @@ A draft pull request was opened so repository CI can assess the source changes:
 - [Draft PR #1](https://github.com/pokiplayer078-png/pokefirered/pull/1)
 
 The source now includes a minimal connected start-to-route loop and first-pass regional Lugia/Ho-Oh acquisition events, but no successful ROM build or mGBA playthrough has been confirmed yet. The GitHub Actions workflow is configured to build FireRed/LeafGreen and publish artifacts after pushes to `serra-region-foundation`. Do not treat this source snapshot as a tested ROM until that workflow succeeds and the ROM is checked in mGBA.
+
+
+## Three selectable starters (beta update)
+
+Vila Flocos now presents three starter Poké Balls. The player can claim exactly one; all three scripts share `FLAG_SERRA_STARTER_GIVEN`, so interacting with another ball after choosing is blocked.
+
+- **Snolet → Glacub → Bearice:** Ice from the beginning; Bearice becomes Ice/Electric.
+- **Dracub → Skalice → Nivadra:** Ground from the beginning; Nivadra becomes Ground/Dragon.
+- **Ironip → Ferritk → Cryotyr:** Steel/Water at every evolutionary stage.
+
+The existing species and evolution lines are reused to keep this beta compact. The map uses the existing item-ball object graphic. These changes are source-level only until the CI build is confirmed and the ROM is tested in mGBA.
