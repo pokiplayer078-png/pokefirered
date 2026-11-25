@@ -6288,18 +6288,6 @@
                 "species": "SPECIES_SNOLET"
               }
             ]
-          },
-          "water_mons": {
-            "encounter_rate": 0,
-            "mons": []
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 0,
-            "mons": []
-          },
-          "fishing_mons": {
-            "encounter_rate": 0,
-            "mons": []
           }
         },
         {
