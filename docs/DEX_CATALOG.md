@@ -25,7 +25,7 @@ Evolution levels below are read from the committed evolution table. Types and ba
 | Ironip → Ferritk → Cryotyr | Ice → Ice/Steel → Ice/Steel | 300 → 402 → 510 |
 | Wraith → Chilume → Gloomice | Ghost → Ghost/Ice → Ghost/Ice | 300 → 402 → 510 |
 | Penglit → Glacian → Emperor | Water → Water/Ice → Water/Ice | 300 → 402 → 510 |
-| Dracub → Skal ice → Nivadra | Dragon → Dragon/Ice → Dragon/Ice | 300 → 402 → 510 |
+| Dracub → Skalice → Nivadra | Dragon → Dragon/Ice → Dragon/Ice | 300 → 402 → 510 |
 | Cindrift → Frostash → Pyrice | Fire → Fire/Ice → Fire/Ice | 300 → 402 → 510 |
 | Mossnow → Fernice → Permoss | Grass → Grass/Ice → Grass/Ice | 300 → 402 → 510 |
 | Tundrak → Nivalva → Borealis | Bug → Bug/Ice → Bug/Ice | 300 → 402 → 510 |
