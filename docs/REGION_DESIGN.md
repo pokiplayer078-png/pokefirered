@@ -14,7 +14,7 @@ After the Serra League and main story, the player can travel to Calor, a warmer 
 
 ## Serra Region — main campaign
 - Eight gyms.
-- Regional Pokédex target: approximately 80 original Serra species, plus regional forms and returning Pokémon.
+- Regional Pokédex: 80 original Serra species already defined, plus regional forms and returning Pokémon.
 - Serra Elite Four: Eira, Magnus, Nox, and Aster.
 - Champion: Rowan.
 - Legendary arc: Serra Articuno, Serra Zapdos, Serra Moltres, the Galarian birds as antagonists/causes of the crisis, and Serra Lugia.
@@ -25,7 +25,7 @@ After the Serra League and main story, the player can travel to Calor, a warmer 
 ## Calor Region — post-game campaign
 - Unlock after the main Serra story.
 - Four gyms and a separate Champion/League challenge.
-- New Calor Pokémon and regional forms, with a warmer climate identity distinct from Serra.
+- Twelve original Calor Pokémon now defined across four evolution families, plus regional forms, with a warmer climate identity distinct from Serra.
 - Calor Ho-Oh: Fairy/Fire.
 - Keep the regional roster compact by sharing existing species data and graphics where appropriate.
 
@@ -34,15 +34,15 @@ After the Serra League and main story, the player can travel to Calor, a warmer 
 - Avoid making every regional form Ice-type.
 - Prioritize meaningful exploration, battles, side content, and progression over oversized maps or redundant encounters.
 - Keep graphics, palettes, map layouts, and encounter tables reusable.
-- Avoid allocating new species IDs until the complete roster and all dependent tables are audited together.
+- Audit every species-indexed table whenever a species ID is added; keep the National Dex and battle data tables synchronized.
 
 ## Current implementation status (2026-11-25)
 
-The working branch now contains 80 original Serra species (IDs 412–491), 21 additional form records (IDs 492–512), complete National Pokédex records for the 80 original species, species-to-dex mappings, and updated alphabetical/type/height/weight ordering. The custom roster also has distinct stage-based catch rates, experience yields, EV yields, varied stat profiles, and cry aliases matched to the base sprite used by each entry.
+The working branch contains 80 original Serra species (IDs 412–491), twelve original Calor species (IDs 513–524), and 21 regional/legendary form records (IDs 492–512). The National Pokédex now has 478 entries, including dedicated pages for all 92 original Serra/Calor species. Species names, base stats, abilities, evolutions, level-up moves, machine/tutor compatibility, Pokédex records, graphics-table aliases, coordinates, footprints, and cry mappings have been connected.
 
-Calor is still a planned post-game region rather than a complete playable region. Current Calor data consists of the Ho-Oh form and Calor variants for the Cindrift and Mossnow lines. Original Calor-only species, maps, encounter tables, gyms, and story events have not yet been implemented. The current sprite table entries reuse existing FireRed graphics; original regional sprite art remains outstanding.
+Serra has its initial 26 three-stage families and two original legendary species. Calor has four original three-stage families: Solsprout, Cindrip, Oaslet, and Dustkit. The Calor roster is now more than a set of forms, but the region is not playable yet: maps, encounter tables, events, four gyms, its League, and travel unlock remain to be built.
 
-See [DEX_CATALOG.md](DEX_CATALOG.md) for the audited species list, typings, balance rules, and remaining quality gates.
+The current sprites, palettes, footprints, and cries reuse FireRed assets as compact placeholders. Unique regional art and audio remain outstanding, and this branch has not yet been compiled into a ROM. See [DEX_CATALOG.md](DEX_CATALOG.md) for the data audit and the remaining quality gates.
 
 ## Implementation sequence
 1. Lock the complete Serra and Calor species roster, forms, types, abilities, evolutions, and dex numbering.
