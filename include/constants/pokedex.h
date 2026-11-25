@@ -519,6 +519,10 @@ enum {
 #define JOHTO_DEX_COUNT     NATIONAL_DEX_CELEBI
 #define NATIONAL_DEX_COUNT  NATIONAL_DEX_DUNEPHANT
 
+// These lists include the legacy Unown forms in addition to National Dex species.
+#define POKEDEX_ORDER_ALPHABETICAL_COUNT (NATIONAL_DEX_COUNT + (NATIONAL_DEX_OLD_UNOWN_Z - NATIONAL_DEX_OLD_UNOWN_B + 1))
+#define POKEDEX_ORDER_TYPE_COUNT         (NATIONAL_DEX_COUNT + (NATIONAL_DEX_OLD_UNOWN_Z - NATIONAL_DEX_OLD_UNOWN_B))
+
 // Hoenn Pokedex order
 enum {
     HOENN_DEX_NONE,
