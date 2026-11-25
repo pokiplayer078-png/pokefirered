@@ -16,6 +16,9 @@ jobs:
       - name: Check out project
         uses: actions/checkout@v4
 
+      - name: Check regional species data tables
+        run: python3 tools/check_serra_calor_data.py
+
       - name: Install GBA build dependencies
         run: |
           sudo apt-get update
