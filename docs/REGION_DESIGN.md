@@ -36,6 +36,14 @@ After the Serra League and main story, the player can travel to Calor, a warmer 
 - Keep graphics, palettes, map layouts, and encounter tables reusable.
 - Avoid allocating new species IDs until the complete roster and all dependent tables are audited together.
 
+## Current implementation status (2026-11-25)
+
+The working branch now contains 80 original Serra species (IDs 412–491), 21 additional form records (IDs 492–512), complete National Pokédex records for the 80 original species, species-to-dex mappings, and updated alphabetical/type/height/weight ordering. The custom roster also has distinct stage-based catch rates, experience yields, EV yields, varied stat profiles, and cry aliases matched to the base sprite used by each entry.
+
+Calor is still a planned post-game region rather than a complete playable region. Current Calor data consists of the Ho-Oh form and Calor variants for the Cindrift and Mossnow lines. Original Calor-only species, maps, encounter tables, gyms, and story events have not yet been implemented. The current sprite table entries reuse existing FireRed graphics; original regional sprite art remains outstanding.
+
+See [DEX_CATALOG.md](DEX_CATALOG.md) for the audited species list, typings, balance rules, and remaining quality gates.
+
 ## Implementation sequence
 1. Lock the complete Serra and Calor species roster, forms, types, abilities, evolutions, and dex numbering.
 2. Audit the current decomp's species constants and all species-indexed tables before extending them.
