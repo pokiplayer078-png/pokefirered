@@ -22,12 +22,17 @@ This document distinguishes source code already added from content that is still
 | Save progression | Reserved flag aliases for three Serra birds, Lugia called, Galar birds defeated and Calor bloomed |
 | Starter/save variables | Story step and Calor state variable aliases |
 | Starter area | Vila Flocos registered as a map, with sign, researcher NPC and Snolet Lv. 5 gift |
+| First playable route | Vila Flocos now connects to a short-term reused route layout; low-level wild encounters include Snolet and early-game species |
+| Route interaction | Researcher dialogue and route sign added; high-level route trainers removed from this beta slice |
+| New-game access | Start point in Vila Flocos and a two-way map connection to the route are configured |
 | New-game start | New games warp to Vila Flocos |
 
 ## Placeholder assets and incomplete systems
 
 - All custom species currently reuse existing FireRed graphics. They are not their final artwork.
 - Vila Flocos reuses the One Island layout and Sevii tileset; it is not yet a snowy town visually.
+- The first route reuses the Kindle Road layout temporarily; its tiles, background, and map name still need replacement with original Serra assets.
+- The new route currently uses low-level wild encounters (levels 4–8); Snolet uses placeholder FireRed graphics until original sprites are integrated.
 - `WEATHER_SNOW` is marked unused in the base constants and must be made/verified in the overworld weather renderer.
 - The story JSON describes the Galar bird sequence and the Ho-Oh transformation, but the actual maps, legendary encounter scripts, battle events, and postgame world-state map variants have not been connected.
 - Calor's four gyms, champion and battles are planned data, not yet registered as actual map events/trainers.
@@ -55,4 +60,4 @@ A draft pull request was opened so repository CI can assess the source changes:
 
 - [Draft PR #1](https://github.com/pokiplayer078-png/pokefirered/pull/1)
 
-No successful ROM build or mGBA playthrough has been confirmed yet. Do not merge this draft until CI, graphics, map connectivity, battle systems and the full story flow are completed.
+The source now includes a minimal connected start-to-route loop, but no successful ROM build or mGBA playthrough has been confirmed yet. The GitHub Actions workflow is configured to build FireRed/LeafGreen and publish artifacts after pushes to `serra-region-foundation`. Do not treat this source snapshot as a tested ROM until that workflow succeeds and the ROM is checked in mGBA.
