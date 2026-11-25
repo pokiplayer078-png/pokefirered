@@ -154,6 +154,23 @@ def check() -> None:
             ).group(1),
             "Serra Lugia must be Ice/Fairy and carry Glaciate.")
 
+    # AI type calculations must mirror Fairy matchups and Glaciate conversion.
+    battle_script_commands = read("src/battle_script_commands.c")
+    battle_ai_switch_items = read("src/battle_ai_switch_items.c")
+    battle_script_header = read("include/battle_script_commands.h")
+    require("ApplyFairyTypeEffectiveness(move, moveType" in battle_script_commands,
+            "Fairy type effectiveness overlay is missing from the shared type calculator.")
+    require("attackerAbility == ABILITY_GLACIATE && moveType == TYPE_NORMAL" in battle_script_commands,
+            "AI type calculations do not account for Glaciate.")
+    require("u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility, u8 attackerAbility)" in battle_script_commands
+            and "u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility, u8 attackerAbility);" in battle_script_header,
+            "AI_TypeCalc must receive the attacking ability for Glaciate.")
+    require("AI_TypeCalc(move, gBattleMons[opposingBattler].species, gBattleMons[opposingBattler].ability, attackerAbility)" in battle_ai_switch_items,
+            "Party-switch AI does not pass its candidate's ability into AI_TypeCalc.")
+    ai_calls = re.findall(r"AI_TypeCalc\(([^;]+)\);", battle_ai_switch_items)
+    require(len(ai_calls) == 6 and all(len(call.split(",")) == 4 for call in ai_calls),
+            "Every AI_TypeCalc call must supply the attacking ability.")
+
     # The 92 original species have independent Pokédex pages. The 21 forms share base entries.
     entries = read("src/data/pokemon/pokedex_entries.h")
     dex_records = re.findall(r"^\s*\[NATIONAL_DEX_([A-Z0-9_]+)\]\s*=", entries, re.M)
