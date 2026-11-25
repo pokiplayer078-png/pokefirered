@@ -238,6 +238,29 @@ def check() -> None:
     require(len(re.findall(r"SPECIES_TO_NATIONAL\(", dex_map_match.group(1))) == 524,
             "Species-to-National-Dex map must cover all 524 species.")
 
+    species_constants = {
+        int(match.group(2)): match.group(1)
+        for match in re.finditer(r"^#define SPECIES_([A-Z0-9_]+)\s+(\d+)$", read("include/constants/species.h"), re.M)
+    }
+    mapped_species = re.findall(r"SPECIES_TO_NATIONAL\(([A-Z0-9_]+)\)", dex_map_match.group(1))
+    regional_form_bases = {
+        492: "ARTICUNO", 493: "ZAPDOS", 494: "MOLTRES",
+        495: "ARTICUNO", 496: "ZAPDOS", 497: "MOLTRES",
+        498: "LUGIA", 499: "HO_OH", 500: "VULPIX", 501: "NINETALES",
+        502: "SANDSHREW", 503: "SANDSLASH", 504: "GEODUDE",
+        505: "GRAVELER", 506: "GOLEM", 507: "CINDRIFT",
+        508: "FROSTASH", 509: "PYRICE", 510: "MOSSNOW",
+        511: "FERNICE", 512: "PERMOSS",
+    }
+    expected_regional_map = [
+        regional_form_bases[species_id] if species_id in regional_form_bases
+        else species_constants[species_id]
+        for species_id in range(412, 525)
+    ]
+    require(mapped_species[411:524] == expected_regional_map,
+            "Regional National Dex mappings are not aligned to their species IDs.")
+
+
     cry_match = re.search(
         r"static const u16 sSerraCalorSpeciesToCryId\[\]\s*=\s*\{(.*?)^\};",
         pokemon_source,
