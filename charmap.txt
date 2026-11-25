@@ -37,6 +37,13 @@
 'ú'         = 27
 'û'         = 28
 'ñ'         = 29
+
+@ Portuguese fallback aliases. The current FireRed font uses plain-vowel glyphs for these accents.
+'ã'         = D5
+'õ'         = E3
+'Ã'         = BB
+'Õ'         = C9
+
 'º'         = 2A
 'ª'         = 2B
 SUPER_ER    = 2C
