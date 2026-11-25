@@ -1498,6 +1498,54 @@ static void ModulateDmgByType2(u8 multiplier, u16 move, u8 *flags)
     }
 }
 
+// Applies the Fairy type chart overlay used by the modern battle type calculator.
+static void ApplyFairyTypeEffectiveness(u16 move, u8 moveType, u8 defenderType1, u8 defenderType2, u8 *flags)
+{
+    u8 defenderTypes[2] = {defenderType1, defenderType2};
+    u8 i;
+
+    if (moveType == TYPE_FAIRY)
+    {
+        for (i = 0; i < 2; i++)
+        {
+            if (i == 1 && defenderTypes[1] == defenderTypes[0])
+                continue;
+
+            switch (defenderTypes[i])
+            {
+            case TYPE_FIGHTING:
+            case TYPE_DRAGON:
+            case TYPE_DARK:
+                ModulateDmgByType2(TYPE_MUL_SUPER_EFFECTIVE, move, flags);
+                break;
+            case TYPE_FIRE:
+            case TYPE_POISON:
+            case TYPE_STEEL:
+                ModulateDmgByType2(TYPE_MUL_NOT_EFFECTIVE, move, flags);
+                break;
+            }
+        }
+    }
+    else
+    {
+        for (i = 0; i < 2; i++)
+        {
+            if (i == 1 && defenderTypes[1] == defenderTypes[0])
+                continue;
+
+            if (defenderTypes[i] == TYPE_FAIRY)
+            {
+                if (moveType == TYPE_POISON || moveType == TYPE_STEEL)
+                    ModulateDmgByType2(TYPE_MUL_SUPER_EFFECTIVE, move, flags);
+                else if (moveType == TYPE_FIGHTING || moveType == TYPE_BUG || moveType == TYPE_DARK)
+                    ModulateDmgByType2(TYPE_MUL_NOT_EFFECTIVE, move, flags);
+                else if (moveType == TYPE_DRAGON)
+                    ModulateDmgByType2(TYPE_MUL_NO_EFFECT, move, flags);
+            }
+        }
+    }
+}
+
 u8 TypeCalc(u16 move, u8 attacker, u8 defender)
 {
     s32 i = 0;
@@ -1508,6 +1556,8 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
         return 0;
 
     moveType = gBattleMoves[move].type;
+    if (gBattleMons[attacker].ability == ABILITY_GLACIATE && moveType == TYPE_NORMAL)
+        moveType = TYPE_ICE;
 
     // check stab
     if (IS_BATTLER_OF_TYPE(attacker, moveType))
@@ -1546,6 +1596,8 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
         }
     }
 
+    ApplyFairyTypeEffectiveness(move, moveType, gBattleMons[defender].type1, gBattleMons[defender].type2, &flags);
+
     if (gBattleMons[defender].ability == ABILITY_WONDER_GUARD && !(flags & MOVE_RESULT_MISSED)
         && AttacksThisTurn(attacker, move) == 2
         && (!(flags & MOVE_RESULT_SUPER_EFFECTIVE) || ((flags & (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)) == (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)))
@@ -1556,7 +1608,7 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
     return flags;
 }
 
-u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility)
+u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility, u8 attackerAbility)
 {
     s32 i = 0;
     u8 flags = 0;
@@ -1567,6 +1619,8 @@ u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility)
         return 0;
 
     moveType = gBattleMoves[move].type;
+    if (attackerAbility == ABILITY_GLACIATE && moveType == TYPE_NORMAL)
+        moveType = TYPE_ICE;
 
     if (targetAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {
@@ -1593,6 +1647,8 @@ u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility)
             i += 3;
         }
     }
+    ApplyFairyTypeEffectiveness(move, moveType, type1, type2, &flags);
+
     if (targetAbility == ABILITY_WONDER_GUARD
      && (!(flags & MOVE_RESULT_SUPER_EFFECTIVE) || ((flags & (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)) == (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)))
      && gBattleMoves[move].power)
