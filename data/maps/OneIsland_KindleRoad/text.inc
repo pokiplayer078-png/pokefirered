@@ -162,3 +162,13 @@ OneIsland_KindleRoad_Text_EmberSpaSign::
     .string "Light the Fire in Your Heart!\n"
     .string "EMBER SPA$"
 
+
+
+SerraRoute_Text_Researcher::
+	.string "A neve de SERRA está derretendo.\p"
+	.string "Os rastros levam às montanhas.\n"
+	.string "Treine seu SNOLET e investigue!$"
+
+SerraRoute_Text_Sign::
+	.string "ROTA DO OBSERVATÓRIO\n"
+	.string "Cuidado com as mudanças no clima.$"
