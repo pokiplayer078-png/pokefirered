@@ -5,3 +5,4 @@
 #endif
 
 #include "pokedex_text_serra.h"
+#include "pokedex_text_calor.h"
