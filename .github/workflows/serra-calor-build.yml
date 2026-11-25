@@ -4,7 +4,7 @@ on:
   push:
     branches: [serra-region-foundation]
   pull_request:
-    branches: [serra-region-foundation]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
