@@ -42,12 +42,12 @@ The working branch contains 80 original Serra species (IDs 412–491), twelve or
 
 Serra has its initial 26 three-stage families and two original legendary species. Calor has four original three-stage families: Solsprout, Cindrip, Oaslet, and Dustkit. The Calor roster is now more than a set of forms, but the region is not playable yet: maps, encounter tables, events, four gyms, its League, and travel unlock remain to be built.
 
-The current sprites, palettes, footprints, and cries reuse FireRed assets as compact placeholders. Unique regional art and audio remain outstanding, and this branch has not yet been compiled into a ROM. See [DEX_CATALOG.md](DEX_CATALOG.md) for the data audit and the remaining quality gates.
+The current sprites, party icons, palettes, footprints, and cries reuse FireRed assets as compact placeholders. Unique regional art and audio remain outstanding, and this branch has not yet been compiled into a ROM. See [DEX_CATALOG.md](DEX_CATALOG.md) for the data audit and the remaining quality gates.
 
 ## Implementation sequence
 1. **Complete.** Lock the current roster: 80 original Serra species, 12 original Calor species, and 21 regional/legendary forms.
 2. **Complete.** Audit species constants and all species-indexed tables; add a static regression checker.
-3. **Partially complete.** Fairy typing and Glaciate have names, descriptions, battle damage and STAB conversion, and Serra Lugia is Ice/Fairy. AI decision-making and full battle tests remain.
+3. **Partially complete.** Fairy typing and Glaciate have names, descriptions, battle damage and STAB conversion, and Serra Lugia is Ice/Fairy. AI matchup calculations now use the same Fairy and Glaciate rules; full battle tests remain.
 4. **Partially complete.** Species data, evolutions, learnsets, TM/HM and tutor compatibility, Pokédex entries, sprite-table aliases, palettes, coordinates, footprints, and cry aliases are connected. Original art, icons where applicable, and distinct audio remain.
 5. **Next major stage.** Build Serra maps, connections, warps, collision, events, trainers, encounters, and gym progression.
 6. **Pending.** Implement the climate/legendary story flags and the Serra Lugia climax.
