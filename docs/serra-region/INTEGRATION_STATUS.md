@@ -26,6 +26,8 @@ This document distinguishes source code already added from content that is still
 | Route interaction | Researcher dialogue and route sign added; high-level route trainers removed from this beta slice |
 | New-game access | Start point in Vila Flocos and a two-way map connection to the route are configured |
 | New-game start | New games warp to Vila Flocos |
+| Regional Lugia event | Vila Flocos NPC grants Lugia de Serra once, using the dedicated progression flag |
+| Regional Ho-Oh revival | Vila Flocos NPC consumes exactly 10 Max Revives, revives Ho-Oh regional and grants it with guaranteed acquisition (no RNG capture roll) |
 
 ## Placeholder assets and incomplete systems
 
@@ -34,7 +36,7 @@ This document distinguishes source code already added from content that is still
 - The first route reuses the Kindle Road layout temporarily; its tiles, background, and map name still need replacement with original Serra assets.
 - The new route currently uses low-level wild encounters (levels 4–8); Snolet uses placeholder FireRed graphics until original sprites are integrated.
 - `WEATHER_SNOW` is marked unused in the base constants and must be made/verified in the overworld weather renderer.
-- The story JSON describes the Galar bird sequence and the Ho-Oh transformation, but the actual maps, legendary encounter scripts, battle events, and postgame world-state map variants have not been connected.
+- The full Galar bird sequence, legendary battle cinematics, and postgame world-state map variants are not connected yet. The first beta uses guaranteed scripted party acquisition for Lugia and revived Ho-Oh rather than a wild battle/capture animation.
 - Calor's four gyms, champion and battles are planned data, not yet registered as actual map events/trainers.
 - The National/Hoenn Pokédex conversion tables and Pokédex entry text/metadata are not yet extended for the new internal species.
 - Fairy battle effectiveness is a first implementation. Fairy move coverage, type names, type icons, summary-screen presentation, AI effectiveness and other type-dependent systems still require integration.
@@ -60,4 +62,4 @@ A draft pull request was opened so repository CI can assess the source changes:
 
 - [Draft PR #1](https://github.com/pokiplayer078-png/pokefirered/pull/1)
 
-The source now includes a minimal connected start-to-route loop, but no successful ROM build or mGBA playthrough has been confirmed yet. The GitHub Actions workflow is configured to build FireRed/LeafGreen and publish artifacts after pushes to `serra-region-foundation`. Do not treat this source snapshot as a tested ROM until that workflow succeeds and the ROM is checked in mGBA.
+The source now includes a minimal connected start-to-route loop and first-pass regional Lugia/Ho-Oh acquisition events, but no successful ROM build or mGBA playthrough has been confirmed yet. The GitHub Actions workflow is configured to build FireRed/LeafGreen and publish artifacts after pushes to `serra-region-foundation`. Do not treat this source snapshot as a tested ROM until that workflow succeeds and the ROM is checked in mGBA.
