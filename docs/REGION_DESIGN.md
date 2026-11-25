@@ -45,14 +45,22 @@ Serra has its initial 26 three-stage families and two original legendary species
 The current sprites, palettes, footprints, and cries reuse FireRed assets as compact placeholders. Unique regional art and audio remain outstanding, and this branch has not yet been compiled into a ROM. See [DEX_CATALOG.md](DEX_CATALOG.md) for the data audit and the remaining quality gates.
 
 ## Implementation sequence
-1. Lock the complete Serra and Calor species roster, forms, types, abilities, evolutions, and dex numbering.
-2. Audit the current decomp's species constants and all species-indexed tables before extending them.
-3. Implement Fairy typing and Glaciate with tests for move conversion, STAB, effectiveness, and AI behavior.
-4. Add species data in one consistent pass: base stats, learnsets, evolutions, cries, icons, front/back sprites, palettes, dex entries, and footprints.
-5. Build Serra maps, connections, warps, collision, events, trainers, encounters, and gym progression.
-6. Implement the climate/legendary story flags and the Serra Lugia climax.
-7. Add Calor as post-game, reusing engine systems and adding its four-gym challenge.
-8. Compile and test the ROM regularly; validate map collision/warps, party and battle edge cases, and save compatibility.
+1. **Complete.** Lock the current roster: 80 original Serra species, 12 original Calor species, and 21 regional/legendary forms.
+2. **Complete.** Audit species constants and all species-indexed tables; add a static regression checker.
+3. **Partially complete.** Fairy typing and Glaciate have names, descriptions, battle damage and STAB conversion, and Serra Lugia is Ice/Fairy. AI decision-making and full battle tests remain.
+4. **Partially complete.** Species data, evolutions, learnsets, TM/HM and tutor compatibility, Pokédex entries, sprite-table aliases, palettes, coordinates, footprints, and cry aliases are connected. Original art, icons where applicable, and distinct audio remain.
+5. **Next major stage.** Build Serra maps, connections, warps, collision, events, trainers, encounters, and gym progression.
+6. **Pending.** Implement the climate/legendary story flags and the Serra Lugia climax.
+7. **Partially complete.** Calor has an original twelve-species roster and post-game design; its maps, events, four gyms, League, and travel unlock remain.
+8. **In progress.** CI now validates the regional data and attempts FireRed/LeafGreen builds. Emulator, save compatibility, battle, and map playtesting remain.
 
 ## Current repository status
-The branch `serra-region-foundation` is present. The FireRed decompilation remains the technical base. This document records the agreed design and implementation order; it does not claim that the region maps, species, sprites, or a playable ROM have already been implemented.
+
+The active development branch is `serra-region-foundation` in [pokiplayer078-png/pokefirered](https://github.com/pokiplayer078-png/pokefirered/tree/serra-region-foundation). It contains:
+- 80 original Serra species (IDs 412–491), 21 regional/legendary forms (492–512), and 12 original Calor species (513–524).
+- 478 unique National Pokédex entries, with the forms sharing their base species' entries.
+- 68 evolution links involving custom species, plus the full species data tables and compatibility mappings.
+- A static checker at `tools/check_serra_calor_data.py`.
+- A GitHub Actions workflow at `.github/workflows/serra-calor-build.yml` that checks the data and builds both GBA versions.
+
+The graphics and audio aliases are compact placeholders using existing FireRed assets. Original regional art, maps, story events, trainer parties, gyms, the Calor League, and playable travel between the regions are not complete. The current CI's static data audit has passed; the GBA compilation is still running and no compiled ROM is being claimed here.
