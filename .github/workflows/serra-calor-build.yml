@@ -3,6 +3,9 @@ name: Serra & Calor ROM build
 on:
   push:
     branches: [serra-region-foundation]
+  pull_request:
+    branches: [serra-region-foundation]
+  workflow_dispatch:
 
 permissions:
   contents: read
