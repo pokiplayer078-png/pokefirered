@@ -10,10 +10,10 @@ This document describes the data currently committed to `serra-region-foundation
 - 12 original Calor species, IDs 513–524, arranged in four three-stage evolution families.
 - 92 dedicated National Pokédex entries and English flavor-text records for the original Serra and Calor species (Dex 387–478).
 - Regional forms reuse the National Pokédex number of their base species.
-- All 113 custom species/form records have species-info, front/back sprite, front/back coordinate, palette, shiny-palette, and footprint entries.
+- All 113 custom species/form records have species-info, front/back sprite, front/back coordinate, party icon, icon palette, normal/shiny palette, and footprint entries.
 - Regional cries currently reuse the cry associated with each species' aliased base sprite. These are varied placeholders, not newly recorded cries. All 113 custom species/form records now resolve to a matching existing cry.
 
-The current graphics are table-level aliases to existing FireRed graphics. Original Serra/Calor sprite art, unique cries, maps, trainers, and story events are still separate content milestones.
+The front/back sprites, party icons, palettes, footprints, and cries currently reuse existing FireRed assets through table aliases. Original Serra/Calor art and unique cries remain separate content milestones; maps, trainers, and story events are not yet implemented.
 
 ## Serra — original species and evolution families
 
@@ -121,3 +121,7 @@ These rules are an initial balance pass. Trainer teams, encounter rates, and in-
 4. Verify every evolution, move learnset, TM/tutor compatibility, egg move, Pokédex entry, and battle ability.
 5. Add Serra and Calor maps, encounters, trainer parties, gyms, story triggers, and travel connections.
 6. Build both FireRed and LeafGreen targets and test the ROM in an emulator, including save data and all Pokédex ordering modes.
+
+## Battle calculation consistency
+
+Fairy type effectiveness and Glaciate's Normal-to-Ice conversion are applied in the main battle calculator, the move/STAB helper, and AI move/switch matchup calculations. AI type calculations receive the attacking ability so reserve Pokémon with Glaciate are evaluated correctly. Full emulator battle testing is still required.
