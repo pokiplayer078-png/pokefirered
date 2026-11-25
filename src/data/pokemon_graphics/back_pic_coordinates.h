@@ -2705,5 +2705,64 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(32, 56),
         .y_offset = 6,
     },
+[SPECIES_SOLSPROUT] =
+    {
+        .size = MON_COORDS_SIZE(48, 32),
+        .y_offset = 16,
+    },
+[SPECIES_SOLBLOOM] =
+    {
+        .size = MON_COORDS_SIZE(56, 48),
+        .y_offset = 10,
+    },
+[SPECIES_SOLARIS] =
+    {
+        .size = MON_COORDS_SIZE(48, 48),
+        .y_offset = 8,
+    },
+[SPECIES_CINDRIP] =
+    {
+        .size = MON_COORDS_SIZE(48, 48),
+        .y_offset = 8,
+    },
+[SPECIES_MAGMOLT] =
+    {
+        .size = MON_COORDS_SIZE(56, 48),
+        .y_offset = 9,
+    },
+[SPECIES_PYROCLAST] =
+    {
+        .size = MON_COORDS_SIZE(64, 32),
+        .y_offset = 19,
+    },
+[SPECIES_OASLET] =
+    {
+        .size = MON_COORDS_SIZE(56, 40),
+        .y_offset = 15,
+    },
+[SPECIES_MIRAJEL] =
+    {
+        .size = MON_COORDS_SIZE(64, 48),
+        .y_offset = 8,
+    },
+[SPECIES_MIRAGEEL] =
+    {
+        .size = MON_COORDS_SIZE(48, 64),
+        .y_offset = 2,
+    },
+[SPECIES_DUSTKIT] =
+    {
+        .size = MON_COORDS_SIZE(48, 40),
+        .y_offset = 13,
+    },
+[SPECIES_SANDRAKE] =
+    {
+        .size = MON_COORDS_SIZE(64, 48),
+        .y_offset = 9,
+    },
+[SPECIES_DUNEPHANT] =
+    {
+        .size = MON_COORDS_SIZE(64, 40),
+        .y_offset = 13,
+    },
 };
-
